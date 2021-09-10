@@ -1,0 +1,14 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"add_precision_case_5",
+    "binFileSuffix":".o",
+    "blockDim":2,
+    "kernelName":"add_precision_case_5__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"c3b7e18d63016dfd8c68829516dadd49c149653bd284e5eed133cc7bcbca4e9f"
+}

@@ -1,0 +1,14 @@
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/CMakeFiles/rebuild_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/CMakeFiles/custom_opp_ubuntu_x86_64.run.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/CMakeFiles/edit_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/framework/CMakeFiles/rebuild_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/framework/CMakeFiles/edit_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/framework/onnx_plugin/CMakeFiles/rebuild_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/framework/onnx_plugin/CMakeFiles/edit_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/op_proto/CMakeFiles/rebuild_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/op_proto/CMakeFiles/cust_op_proto.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/op_proto/CMakeFiles/edit_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/tbe/CMakeFiles/rebuild_cache.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/tbe/CMakeFiles/config_json.dir
+/home/allen/AscendProjects/thresholdedRelu_zyx/build/tbe/CMakeFiles/edit_cache.dir

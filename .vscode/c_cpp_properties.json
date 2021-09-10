@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/allen/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/home/allen/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/ccec_compiler/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}

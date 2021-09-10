@@ -1,0 +1,25 @@
+{
+  "fail": 1,
+  "name": "",
+  "op": [
+    {
+      "cause": [
+        {
+          "code": 1,
+          "message": "The type is not supported."
+        }
+      ],
+      "name": "ThresholdedReluNpu_0",
+      "result": "failed",
+      "type": "ai.onnx::14::ThresholdedReluNpu"
+    },
+    {
+      "name": "X",
+      "result": "success",
+      "type": "Input"
+    }
+  ],
+  "pass": 1,
+  "result": "failed",
+  "total": 2
+}

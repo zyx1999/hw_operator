@@ -1,0 +1,232 @@
+[info] Dispatch: [00000000](PC:0x10bd1000) scalar_mov_xd_imme16(x[0]= 0x0, imme16:0x1 )
+[info] Dispatch: [00000001](PC:0x10bd1004) scalar_neg(dType:0x0,  x[0]= 0x0, xn:0x0)
+[info] Dispatch: [00000002](PC:0x10bd1008) scalar_mov_xd_imme16(x[29]= 0x0, imme16:0xffc0 )
+[info] Dispatch: [00000003](PC:0x10bd100c) movemask(num_block:0, mask:0, X0:0xffffffffffffffff)
+[info] Dispatch: [00000004](PC:0x10bd1010) scalar_movk_xd_imme16(x[29]= 0xffc0, imme16:0x3, uimm2:0x1 )
+[info] Dispatch: [00000005](PC:0x10bd1014) movemask(num_block:0, mask:1, X1:0xffffffffffffffff)
+[info] Dispatch: [00000006](PC:0x10bd1018) scalar_mov_xd_xn( x[30]= 0x0, x[29]= 0x3ffc0)
+[info] Dispatch: [00000007](PC:0x10bd101c) scalar_mov_xd_imme16(x[1]= 0x0, imme16:0x12 )
+[info] Dispatch: [00000008](PC:0x10bd1020) scalar_mov_xd_special( x[0]= 0x0, SPR_PARA_BASE= 0x1029fe00,)
+[info] Dispatch: [00000009](PC:0x10bd1024) scalar_movk_xd_imme16(x[1]= 0x12, imme16:0x1, uimm2:0x1 )
+[info] Dispatch: [00000010](PC:0x10bd1028) mov_out_to_ub(xd:29, xn:0, xm:1, xdValue:0x3ffc0, xnValue:0x1029fe00, xmValue:0x10012, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] Dispatch: [00000011](PC:0x10bd102c) scalar_mov_xd_imme16(x[2]= 0x0, imme16:0x1 )
+[info] Dispatch: [00000012](PC:0x10bd1030) scalar_neg(dType:0x0,  x[2]= 0x0, xn:0x2)
+[info] Dispatch: [00000013](PC:0x10bd1034) scalar_mov_xd_imme16(x[0]= 0x0, imme16:0x0 )
+[info] Dispatch: [00000014](PC:0x10bd1038) scalar_mov_xd_imme16(x[3]= 0x0, imme16:0x1 )
+[info] Dispatch: [00000015](PC:0x10bd103c) scalar_movk_xd_imme16(x[3]= 0x1, imme16:0x1, uimm2:0x1 )
+[info] Dispatch: [00000016](PC:0x10bd1040) scalar_movk_xd_imme16(x[3]= 0x10001, imme16:0x808, uimm2:0x2 )
+[info] Dispatch: [00000017](PC:0x10bd1044) scalar_movk_xd_imme16(x[3]= 0x80800010001, imme16:0x8000, uimm2:0x3 )
+[info] Dispatch: [00000018](PC:0x10bd1048) scalar_mov_xd_imme16(x[6]= 0x0, imme16:0x8000 )
+[info] Dispatch: [00000019](PC:0x10bd104c) set_flag(pipe_type: L2, tigger_pipe: SCALAR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is SCALAR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000020](PC:0x10bd1050) wait_flag(pipe_type: L2, tigger_pipe: SCALAR, event_id: 0)
+[info] Dispatch: [00000021](PC:0x10bd1054) scalar_ld_imm(dType:0x3,  x[1]= 0x10012, x[29]= 0x3ffc0, imm12= 0x0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is SCALAR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000022](PC:0x10bd1058) scalar_ld_imm(dType:0x3,  x[4]= 0x0, x[29]= 0x3ffc0, imm12= 0x8)
+[info] Dispatch: [00000023](PC:0x10bd105c) movemask(num_block:0, mask:1, X1:0xffffffffffffffff)
+[info] Dispatch: [00000024](PC:0x10bd1060) movemask(num_block:0, mask:0, X0:0xffffffffffffffff)
+[info] Dispatch: [00000025](PC:0x10bd1064) movemask(num_block:0, mask:1, X1:0xffffffffffffffff)
+[info] Dispatch: [00000026](PC:0x10bd1068) movemask(num_block:0, mask:0, X0:0xffffffffffffffff)
+[info] Dispatch: [00000027](PC:0x10bd106c) scalar_mov_xd_special( x[2]= 0x0, SPR_BLK_ID= 0x0,)
+[info] Dispatch: [00000028](PC:0x10bd1070) scalar_shl(dType:0x3, x[2]= 0x0, x[0]= 0x0, datasource:= 0x0, imm6:= 0x11 )
+[info] Dispatch: [00000029](PC:0x10bd1074) scalar_signext(dType:0x2,  x[5]= 0x0, x[2]= 0x0)
+[info] Dispatch: [00000030](PC:0x10bd1078) scalar_shl(dType:0x3, x[5]= 0x0, x[0]= 0x0, datasource:= 0x0, imm6:= 0x1 )
+[info] Dispatch: [00000031](PC:0x10bd107c) scalar_add(dType:0x0, x[2]= 0x0, x[1]= 0x10ad0200, x[5]= 0x0)
+[info] Dispatch: [00000032](PC:0x10bd1080) scalar_mov_xd_imme16(x[1]= 0x0, imme16:0x10 )
+[info] Dispatch: [00000033](PC:0x10bd1084) scalar_movk_xd_imme16(x[1]= 0x10, imme16:0x400, uimm2:0x1 )
+[info] Dispatch: [00000034](PC:0x10bd1088) mov_out_to_ub(xd:0, xn:2, xm:1, xdValue:0x0, xnValue:0x10ad0200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] Dispatch: [00000035](PC:0x10bd108c) scalar_add(dType:0x0, x[4]= 0x0, x[4]= 0x10b50400, x[5]= 0x0)
+[info] Dispatch: [00000036](PC:0x10bd1090) scalar_mov_xd_imme16(x[5]= 0x0, imme16:0x8000 )
+[info] Dispatch: [00000037](PC:0x10bd1094) scalar_add(dType:0x0, x[7]= 0x0, x[2]= 0x10ad0200, x[6]= 0x8000)
+[info] Dispatch: [00000038](PC:0x10bd1098) scalar_add(dType:0x0, x[6]= 0x0, x[4]= 0x10b50400, x[6]= 0x8000)
+[info] Dispatch: [00000039](PC:0x10bd109c) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000040](PC:0x10bd10a0) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000041](PC:0x10bd10a4) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x0, src_addr:0x0, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000042](PC:0x10bd10a8) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000043](PC:0x10bd10ac) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000044](PC:0x10bd10b0) mov_ub_to_out(xd:4, xn:0, xm:1, xdValue:0x10b50400, xnValue:0x0, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000045](PC:0x10bd10b4) set_flag(pipe_type: L3, tigger_pipe: L2, event_id: 0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000046](PC:0x10bd10b8) mov_out_to_ub(xd:5, xn:7, xm:1, xdValue:0x8000, xnValue:0x10ad8200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] Dispatch: [00000047](PC:0x10bd10bc) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000048](PC:0x10bd10c0) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000049](PC:0x10bd10c4) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x8000, src_addr:0x8000, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000050](PC:0x10bd10c8) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000051](PC:0x10bd10cc) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000052](PC:0x10bd10d0) mov_ub_to_out(xd:6, xn:5, xm:1, xdValue:0x10b58400, xnValue:0x8000, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000053](PC:0x10bd10d4) scalar_mov_xd_imme16(x[6]= 0x0, imme16:0x0 )
+[info] Dispatch: [00000054](PC:0x10bd10d8) scalar_movk_xd_imme16(x[6]= 0x0, imme16:0x1, uimm2:0x1 )
+[info] Dispatch: [00000055](PC:0x10bd10dc) scalar_add(dType:0x0, x[7]= 0x0, x[2]= 0x10ad0200, x[6]= 0x10000)
+[info] Dispatch: [00000056](PC:0x10bd10e0) scalar_add(dType:0x0, x[6]= 0x0, x[4]= 0x10b50400, x[6]= 0x10000)
+[info] Dispatch: [00000057](PC:0x10bd10e4) set_flag(pipe_type: L3, tigger_pipe: L2, event_id: 1)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 1, num is 1
+
+[info] Dispatch: [00000058](PC:0x10bd10e8) wait_flag(pipe_type: L3, tigger_pipe: L2, event_id: 0)
+[info] Dispatch: [00000059](PC:0x10bd10ec) mov_out_to_ub(xd:0, xn:7, xm:1, xdValue:0x0, xnValue:0x10ae0200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000060](PC:0x10bd10f0) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000061](PC:0x10bd10f4) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000062](PC:0x10bd10f8) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x0, src_addr:0x0, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000063](PC:0x10bd10fc) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000064](PC:0x10bd1100) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000065](PC:0x10bd1104) mov_ub_to_out(xd:6, xn:0, xm:1, xdValue:0x10b60400, xnValue:0x0, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000066](PC:0x10bd1108) scalar_mov_xd_imme16(x[6]= 0x0, imme16:0x8000 )
+[info] Dispatch: [00000067](PC:0x10bd110c) scalar_movk_xd_imme16(x[6]= 0x8000, imme16:0x1, uimm2:0x1 )
+[info] Dispatch: [00000068](PC:0x10bd1110) scalar_add(dType:0x0, x[7]= 0x0, x[2]= 0x10ad0200, x[6]= 0x18000)
+[info] Dispatch: [00000069](PC:0x10bd1114) scalar_add(dType:0x0, x[6]= 0x0, x[4]= 0x10b50400, x[6]= 0x18000)
+[info] Dispatch: [00000070](PC:0x10bd1118) set_flag(pipe_type: L3, tigger_pipe: L2, event_id: 0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000071](PC:0x10bd111c) wait_flag(pipe_type: L3, tigger_pipe: L2, event_id: 1)
+[info] Dispatch: [00000072](PC:0x10bd1120) mov_out_to_ub(xd:5, xn:7, xm:1, xdValue:0x8000, xnValue:0x10ae8200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 1, num is 0
+
+[info] Dispatch: [00000073](PC:0x10bd1124) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000074](PC:0x10bd1128) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000075](PC:0x10bd112c) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x8000, src_addr:0x8000, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000076](PC:0x10bd1130) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000077](PC:0x10bd1134) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000078](PC:0x10bd1138) mov_ub_to_out(xd:6, xn:5, xm:1, xdValue:0x10b68400, xnValue:0x8000, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000079](PC:0x10bd113c) scalar_mov_xd_imme16(x[6]= 0x0, imme16:0x0 )
+[info] Dispatch: [00000080](PC:0x10bd1140) scalar_movk_xd_imme16(x[6]= 0x0, imme16:0x2, uimm2:0x1 )
+[info] Dispatch: [00000081](PC:0x10bd1144) scalar_add(dType:0x0, x[7]= 0x0, x[2]= 0x10ad0200, x[6]= 0x20000)
+[info] Dispatch: [00000082](PC:0x10bd1148) scalar_add(dType:0x0, x[6]= 0x0, x[4]= 0x10b50400, x[6]= 0x20000)
+[info] Dispatch: [00000083](PC:0x10bd114c) set_flag(pipe_type: L3, tigger_pipe: L2, event_id: 1)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 1, num is 1
+
+[info] Dispatch: [00000084](PC:0x10bd1150) wait_flag(pipe_type: L3, tigger_pipe: L2, event_id: 0)
+[info] Dispatch: [00000085](PC:0x10bd1154) mov_out_to_ub(xd:0, xn:7, xm:1, xdValue:0x0, xnValue:0x10af0200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000086](PC:0x10bd1158) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000087](PC:0x10bd115c) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000088](PC:0x10bd1160) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x0, src_addr:0x0, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000089](PC:0x10bd1164) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000090](PC:0x10bd1168) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000091](PC:0x10bd116c) mov_ub_to_out(xd:6, xn:0, xm:1, xdValue:0x10b70400, xnValue:0x0, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000092](PC:0x10bd1170) scalar_mov_xd_imme16(x[6]= 0x0, imme16:0x8000 )
+[info] Dispatch: [00000093](PC:0x10bd1174) scalar_movk_xd_imme16(x[6]= 0x8000, imme16:0x2, uimm2:0x1 )
+[info] Dispatch: [00000094](PC:0x10bd1178) scalar_add(dType:0x0, x[7]= 0x0, x[2]= 0x10ad0200, x[6]= 0x28000)
+[info] Dispatch: [00000095](PC:0x10bd117c) scalar_add(dType:0x0, x[6]= 0x0, x[4]= 0x10b50400, x[6]= 0x28000)
+[info] Dispatch: [00000096](PC:0x10bd1180) set_flag(pipe_type: L3, tigger_pipe: L2, event_id: 0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000097](PC:0x10bd1184) wait_flag(pipe_type: L3, tigger_pipe: L2, event_id: 1)
+[info] Dispatch: [00000098](PC:0x10bd1188) mov_out_to_ub(xd:5, xn:7, xm:1, xdValue:0x8000, xnValue:0x10af8200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 1, num is 0
+
+[info] Dispatch: [00000099](PC:0x10bd118c) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000100](PC:0x10bd1190) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000101](PC:0x10bd1194) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x8000, src_addr:0x8000, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000102](PC:0x10bd1198) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000103](PC:0x10bd119c) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000104](PC:0x10bd11a0) mov_ub_to_out(xd:6, xn:5, xm:1, xdValue:0x10b78400, xnValue:0x8000, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000105](PC:0x10bd11a4) scalar_mov_xd_imme16(x[6]= 0x0, imme16:0x0 )
+[info] Dispatch: [00000106](PC:0x10bd11a8) scalar_movk_xd_imme16(x[6]= 0x0, imme16:0x3, uimm2:0x1 )
+[info] Dispatch: [00000107](PC:0x10bd11ac) scalar_add(dType:0x0, x[7]= 0x0, x[2]= 0x10ad0200, x[6]= 0x30000)
+[info] Dispatch: [00000108](PC:0x10bd11b0) scalar_add(dType:0x0, x[6]= 0x0, x[4]= 0x10b50400, x[6]= 0x30000)
+[info] Dispatch: [00000109](PC:0x10bd11b4) set_flag(pipe_type: L3, tigger_pipe: L2, event_id: 1)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 1, num is 1
+
+[info] Dispatch: [00000110](PC:0x10bd11b8) wait_flag(pipe_type: L3, tigger_pipe: L2, event_id: 0)
+[info] Dispatch: [00000111](PC:0x10bd11bc) mov_out_to_ub(xd:0, xn:7, xm:1, xdValue:0x0, xnValue:0x10b00200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000112](PC:0x10bd11c0) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000113](PC:0x10bd11c4) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000114](PC:0x10bd11c8) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x0, src_addr:0x0, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000115](PC:0x10bd11cc) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000116](PC:0x10bd11d0) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000117](PC:0x10bd11d4) mov_ub_to_out(xd:6, xn:0, xm:1, xdValue:0x10b80400, xnValue:0x0, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000118](PC:0x10bd11d8) scalar_mov_xd_imme16(x[0]= 0x0, imme16:0x8000 )
+[info] Dispatch: [00000119](PC:0x10bd11dc) scalar_movk_xd_imme16(x[0]= 0x8000, imme16:0x3, uimm2:0x1 )
+[info] Dispatch: [00000120](PC:0x10bd11e0) scalar_add(dType:0x0, x[2]= 0x0, x[2]= 0x10ad0200, x[0]= 0x38000)
+[info] Dispatch: [00000121](PC:0x10bd11e4) scalar_add(dType:0x0, x[0]= 0x0, x[4]= 0x10b50400, x[0]= 0x38000)
+[info] Dispatch: [00000122](PC:0x10bd11e8) wait_flag(pipe_type: L3, tigger_pipe: L2, event_id: 1)
+[info] Dispatch: [00000123](PC:0x10bd11ec) mov_out_to_ub(xd:5, xn:2, xm:1, xdValue:0x8000, xnValue:0x10b08200, xmValue:0x4000010, srcIDValue:2, destIDValue:1, reluValue:0, padValue:0)
+[info] event: src pipe is DMAC_L3_PIPE, dst pipe is DMAC_L2_PIPE, id is 1, num is 0
+
+[info] Dispatch: [00000124](PC:0x10bd11f0) scalar_mov_xd_imme16(x[2]= 0x0, imme16:0xfff )
+[info] Dispatch: [00000125](PC:0x10bd11f4) set_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000126](PC:0x10bd11f8) wait_flag(pipe_type: L2, tigger_pipe: VECTOR, event_id: 0)
+[info] Dispatch: [00000127](PC:0x10bd11fc) vrelu(op0:4, op1:1, op2:3, type/convType 5, repeat:128, dest_addr:0x8000, src_addr:0x8000, dst_stride:1, src_stride:1, dst_rep_stride:8, src_rep_stride:8, reg:0, h0:0)
+[info] event: src pipe is DMAC_L2_PIPE, dst pipe is VECTOR_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000128](PC:0x10bd1200) set_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 1
+
+[info] Dispatch: [00000129](PC:0x10bd1204) wait_flag(pipe_type: VECTOR, tigger_pipe: L3, event_id: 0)
+[info] Dispatch: [00000130](PC:0x10bd1208) mov_ub_to_out(xd:0, xn:5, xm:1, xdValue:0x10b88400, xnValue:0x8000, xmValue:0x4000010, srcIDValue:1, destIDValue:3, reluValue:0, padValue:0)
+[info] event: src pipe is VECTOR_PIPE, dst pipe is DMAC_L3_PIPE, id is 0, num is 0
+
+[info] Dispatch: [00000131](PC:0x10bd120c) scalar_mov_xd_special( x[0]= 0x0, SPR_STATUS= 0x0,)
+[info] Dispatch: [00000132](PC:0x10bd1210) scalar_mov_xd_xn( x[1]= 0x4000010, x[0]= 0x0)
+[info] Dispatch: [00000133](PC:0x10bd1214) scalar_shr(dType:0x1, x[1]= 0x0,x[0]= 0x0 , datasource:= 0x0, imm6:= 0x30)
+[info] Dispatch: [00000134](PC:0x10bd1218) scalar_and(dType:0x3, x[1]= 0x0, x[1]= 0x0, x[2]= 0xfff )
+[info] Dispatch: [00000135](PC:0x10bd121c) scalar_mov_xd_imme16(x[2]= 0x0, imme16:0x0 )
+[info] Dispatch: [00000136](PC:0x10bd1220) scalar_cmp(dType:0x0, x[1]= 0x0, x[2]= 0x0, OP:0x0, conditionFlag:0x0)
+[info] Dispatch: [00000137](PC:0x10bd1224) barrier(pipe_type: ALL)
+[info] Dispatch: [00000138](PC:0x10bd1228) jumpci (dest_address:0x10bd1248, conditional_flag:1)
+[info] Dispatch: [00000139](PC:0x10bd1248) end_execution

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libcust_onnx_parsers.so -o ../../makepkg/packages/framework/custom/onnx/libcust_onnx_parsers.so CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.o CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.o CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.o 

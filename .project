@@ -1,0 +1,8 @@
+{
+  "type": "Ascend Operator",
+  "project_type": "TBE Operator V2",
+  "project_desc": "Describe your operator here.",
+  "target": "",
+  "target_id": "",
+  "adk_version": "3.10.T0.0.B260"
+}

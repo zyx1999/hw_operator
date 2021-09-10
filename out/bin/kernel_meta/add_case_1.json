@@ -1,0 +1,13 @@
+{
+    "binFileName":"add_case_1",
+    "binFileSuffix":".o",
+    "blockDim":2,
+    "kernelName":"add_case_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"893c05432b74a9c95f1a2517d020a342cb34ed23c1c5e68341e541632f352f17"
+}

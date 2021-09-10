@@ -1,0 +1,103 @@
+{
+    "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py": [
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_1",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_2",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_3",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_4",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_5",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_6",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_1",
+            "case_usage": "precision",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_2",
+            "case_usage": "precision",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_3",
+            "case_usage": "precision",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_4",
+            "case_usage": "precision",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_5",
+            "case_usage": "precision",
+            "support_soc": [
+                "Ascend310",
+                "Ascend610"
+            ]
+        }
+    ]
+}

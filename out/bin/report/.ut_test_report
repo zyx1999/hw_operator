@@ -1,0 +1,939 @@
+{
+    "run_cmd": null,
+    "report_list": [
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_1",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_case_1",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        }
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "compile",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 25,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_2",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_case_2",
+                    "op_params": [
+                        {
+                            "dtype": "float32",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float32",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        1.0
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "compile",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 45,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_3",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_case_3",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NC1HWC0",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NC1HWC0",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NC1HWC0",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NC1HWC0",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        2
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "compile",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 65,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_4",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_case_4",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NHWC",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NHWC",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NHWC",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NHWC",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        0
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "compile",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 85,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_5",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_case_5",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NHWC",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NHWC",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NHWC",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NHWC",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        -1.0
+                    ],
+                    "addition_params": null,
+                    "expect": "failed",
+                    "case_usage": "compile",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 105,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_case_6",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_case_6",
+                    "op_params": [
+                        {
+                            "dtype": "int8",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NHWC",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NHWC",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "int8",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NHWC",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NHWC",
+                            "data_path": null,
+                            "expect_data_path": null,
+                            "range": null
+                        }
+                    ],
+                    "addition_params": null,
+                    "expect": "failed",
+                    "case_usage": "compile",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 124,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_1",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_precision_case_1",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "./data/thresholded_relu_npu/add_precision_case_1_input0.bin",
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_1_output0.bin",
+                            "expect_data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_1_expect_output0.bin",
+                            "range": null
+                        },
+                        0
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "precision",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 159,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_2",
+            "run_soc": "Ascend310",
+            "status": "failed",
+            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 23, max_atol is: 0.1 ",
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_precision_case_2",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "./data/thresholded_relu_npu/add_precision_case_2_input0.bin",
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_2_output0.bin",
+                            "expect_data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_2_expect_output0.bin",
+                            "range": null
+                        },
+                        2
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "precision",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 183,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "failed",
+                        "result": null,
+                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 23, max_atol is: 0.1 ",
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_3",
+            "run_soc": "Ascend310",
+            "status": "failed",
+            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 8, max_atol is: 0.1 ",
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_precision_case_3",
+                    "op_params": [
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "./data/thresholded_relu_npu/add_precision_case_3_input0.bin",
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float16",
+                            "shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                1,
+                                16,
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_3_output0.bin",
+                            "expect_data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_3_expect_output0.bin",
+                            "range": null
+                        }
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "precision",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 206,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "failed",
+                        "result": null,
+                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 8, max_atol is: 0.1 ",
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_4",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_precision_case_4",
+                    "op_params": [
+                        {
+                            "dtype": "float32",
+                            "shape": [
+                                32
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                32
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "./data/thresholded_relu_npu/add_precision_case_4_input0.bin",
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float32",
+                            "shape": [
+                                32
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                32
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_4_output0.bin",
+                            "expect_data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_4_expect_output0.bin",
+                            "range": null
+                        },
+                        0
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "precision",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 230,
+                    "precision_standard": null,
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        },
+        {
+            "op_type": "thresholded_relu_npu",
+            "case_name": "add_precision_case_5",
+            "run_soc": "Ascend310",
+            "status": "success",
+            "err_msg": null,
+            "trace_detail": {
+                "run_soc": "Ascend310",
+                "ut_case_info": {
+                    "support_soc": [
+                        "Ascend310",
+                        "Ascend610"
+                    ],
+                    "op_type": "thresholded_relu_npu",
+                    "case_name": "add_precision_case_5",
+                    "op_params": [
+                        {
+                            "dtype": "float32",
+                            "shape": [
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "./data/thresholded_relu_npu/add_precision_case_5_input0.bin",
+                            "expect_data_path": null,
+                            "range": null
+                        },
+                        {
+                            "dtype": "float32",
+                            "shape": [
+                                128,
+                                128
+                            ],
+                            "format": "NCHW",
+                            "ori_shape": [
+                                128,
+                                128
+                            ],
+                            "ori_format": "NCHW",
+                            "data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_5_output0.bin",
+                            "expect_data_path": "/home/allen/AscendProjects/thresholdedRelu_zyx/out/bin/data/thresholded_relu_npu/add_precision_case_5_expect_output0.bin",
+                            "range": null
+                        },
+                        5
+                    ],
+                    "addition_params": null,
+                    "expect": "success",
+                    "case_usage": "precision",
+                    "case_file": "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/thresholded_relu_npu/test_thresholded_relu_npu_impl.py",
+                    "case_line_num": 255,
+                    "precision_standard": {
+                        "precision_type": "percent",
+                        "rtol": 0.001,
+                        "atol": 0.001,
+                        "max_atol": null
+                    },
+                    "op_imply_type": "static_shape"
+                },
+                "stage_result": [
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    },
+                    {
+                        "status": "success",
+                        "result": null,
+                        "err_msg": null,
+                        "stage_name": null,
+                        "err_trace": null
+                    }
+                ]
+            }
+        }
+    ]
+}

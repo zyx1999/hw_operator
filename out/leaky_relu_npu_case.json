@@ -1,0 +1,76 @@
+{
+    "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/leaky_relu_npu/test_leaky_relu_npu_impl.py": [
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_1",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_2",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_3",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_4",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_5",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_6",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leakey_relu_npu_auto_case_name_7",
+            "case_usage": "compile",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        },
+        {
+            "op_type": "leakey_relu_npu",
+            "case_name": "test_leaky_relu_npu_precision",
+            "case_usage": "precision",
+            "support_soc": [
+                "Ascend610",
+                "Ascend310"
+            ]
+        }
+    ]
+}

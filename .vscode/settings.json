@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "limits": "cpp",
+        "string": "cpp",
+        "*.inc": "cpp",
+        "*.txx": "cpp",
+        "vector": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
