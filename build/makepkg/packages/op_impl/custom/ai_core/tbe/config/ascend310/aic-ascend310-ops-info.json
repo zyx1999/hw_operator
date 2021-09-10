@@ -69,47 +69,5 @@
         "partial":{
             "flag":"true"
         }
-    },
-    "ThresholdedReluNpu":{
-        "async":{
-            "flag":"false"
-        },
-        "attr":{
-            "list":"alpha"
-        },
-        "attr_alpha":{
-            "defaultValue":"1.0",
-            "paramType":"optional",
-            "type":"float",
-            "value":"all"
-        },
-        "compute":{
-            "cost":"10"
-        },
-        "input0":{
-            "dtype":"float16,float16,float16,float,float,float",
-            "format":"NCHW,NC1HWC0,NHWC,NCHW,NC1HWC0",
-            "name":"x",
-            "needCompile":"false",
-            "paramType":"required",
-            "shape":"all"
-        },
-        "opFile":{
-            "value":"thresholded_relu_npu"
-        },
-        "opInterface":{
-            "value":"thresholded_relu_npu"
-        },
-        "output0":{
-            "dtype":"float16,float16,float16,float,float,float",
-            "format":"NCHW,NC1HWC0,NHWC,NCHW,NC1HWC0,NHWC",
-            "name":"y",
-            "needCompile":"false",
-            "paramType":"required",
-            "shape":"all"
-        },
-        "partial":{
-            "flag":"true"
-        }
     }
 }

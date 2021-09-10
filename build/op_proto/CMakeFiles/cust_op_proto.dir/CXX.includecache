@@ -176,10 +176,6 @@ vector
 graph/operator_reg.h
 /home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/./graph/operator_reg.h
 
-/home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/./thresholded_relu_npu.h
-graph/operator_reg.h
-/home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/./graph/operator_reg.h
-
 /home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/abs_npu.cpp
 abs_npu.h
 /home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/abs_npu.h
@@ -203,10 +199,14 @@ vector
 -
 
 /home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/thresholded_relu_npu.cpp
-./thresholded_relu_npu.h
-/home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/./thresholded_relu_npu.h
-string
--
+thresholded_relu_npu.h
+/home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/thresholded_relu_npu.h
 vector
 -
+string
+-
+
+/home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/thresholded_relu_npu.h
+graph/operator_reg.h
+/home/allen/AscendProjects/thresholdedRelu_zyx/op_proto/graph/operator_reg.h
 

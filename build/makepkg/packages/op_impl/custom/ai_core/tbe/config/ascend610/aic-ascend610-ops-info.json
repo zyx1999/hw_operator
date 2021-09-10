@@ -71,7 +71,7 @@
         "attr":{
             "list":"alpha"
         },
-        "attr_threshold":{
+        "attr_alpha":{
             "defaultValue":"1.0",
             "paramType":"optional",
             "type":"float",
@@ -92,7 +92,7 @@
             "value":"thresholded_relu_npu"
         },
         "opInterface":{
-            "value":"thresholded_relu"
+            "value":"thresholded_relu_npu"
         },
         "output0":{
             "dtype":"float16,float16,float16,float,float,float",

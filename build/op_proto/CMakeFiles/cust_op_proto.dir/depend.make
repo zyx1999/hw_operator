@@ -46,6 +46,6 @@ op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: /home/allen/.m
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: /home/allen/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include/graph/operator_reg.h
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: /home/allen/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include/graph/tensor.h
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: /home/allen/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include/graph/types.h
-op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: ../op_proto/./thresholded_relu_npu.h
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: ../op_proto/thresholded_relu_npu.cpp
+op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: ../op_proto/thresholded_relu_npu.h
 
