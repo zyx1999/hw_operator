@@ -30,18 +30,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/csv_files" />
+      <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend610" />
+      <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend310" />
+      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
+      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
       <recent name="$PROJECT_DIR$/op_proto" />
       <recent name="$PROJECT_DIR$/framework/onnx_plugin" />
       <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend610" />
       <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/csv_files" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend610" />
-      <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend310" />
-      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
-      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test_thresholded_relu_npu">
