@@ -143,7 +143,7 @@
     </configuration>
     <configuration name="ss.sh" type="ShConfigurationType" temporary="true">
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts/ss.sh" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts/atc_convert_model.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
@@ -153,12 +153,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Ascend Operator.ut_impl_thresholded_relu_npu" />
       <item itemvalue="Ascend Operator.ut_impl_leaky_relu_npu" />
+      <item itemvalue="Ascend Operator.ut_impl_thresholded_relu_npu" />
       <item itemvalue="Ascend Operator.ut_proto_thresholded_relu_npu" />
+      <item itemvalue="Python.my_utils" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test_lk" />
-      <item itemvalue="Python.my_utils" />
       <item itemvalue="Python.test_thresholded_relu_npu" />
       <item itemvalue="Shell Script.ss.sh" />
     </list>
@@ -201,22 +201,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="515" y="222" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1631112174887" />
-    <state width="1419" height="370" key="GridCell.Tab.0.bottom" timestamp="1631120776964">
+    <state width="1419" height="141" key="GridCell.Tab.0.bottom" timestamp="1631424763947">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="370" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631120776964" />
-    <state width="1419" height="370" key="GridCell.Tab.0.center" timestamp="1631120776962">
+    <state width="1419" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631424763947" />
+    <state width="1419" height="141" key="GridCell.Tab.0.center" timestamp="1631424763945">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="370" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631120776962" />
-    <state width="1419" height="370" key="GridCell.Tab.0.left" timestamp="1631120776961">
+    <state width="1419" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631424763945" />
+    <state width="1419" height="141" key="GridCell.Tab.0.left" timestamp="1631424763944">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="370" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631120776961" />
-    <state width="1419" height="370" key="GridCell.Tab.0.right" timestamp="1631120776963">
+    <state width="1419" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631424763944" />
+    <state width="1419" height="141" key="GridCell.Tab.0.right" timestamp="1631424763946">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="370" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631120776963" />
+    <state width="1419" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631424763946" />
     <state width="1419" height="261" key="GridCell.Tab.1.bottom" timestamp="1630581493540">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

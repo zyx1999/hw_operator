@@ -118,7 +118,7 @@ def generate_onnx_models(alpha_list, range_list, shape_list, data_type):
         print('[ERROR]: no such data type: {}'.format(data_type))
         return
 
-    MODEL_DIRECTORY = './model/'
+    MODEL_DIRECTORY = './onnx_model/'
     MODEL_NAME_PREFIX = 'Thresholded_relu_npu'
     MODEL_NAME_SUFFIX = '.onnx'
     MODEL_NAME = MODEL_NAME_PREFIX + MODEL_DATA_TYPE
@@ -128,8 +128,8 @@ def generate_onnx_models(alpha_list, range_list, shape_list, data_type):
     if not model_amount:
         return
 
-    if not os.path.exists('./model'):
-        os.mkdir('./model')
+    if not os.path.exists(MODEL_DIRECTORY):
+        os.mkdir(MODEL_DIRECTORY)
 
     for idx in range(0, model_amount):
         order = idx + 1
