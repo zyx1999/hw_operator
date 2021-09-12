@@ -132,11 +132,7 @@ def generate_onnx_models(alpha_list, range_list, shape_list, data_type):
         os.mkdir(MODEL_DIRECTORY)
 
     for idx in range(0, model_amount):
-        order = idx + 1
-        order_str = str(order)
-        while not order // 100:
-            order_str = '0' + order_str
-            order *= 10
+        order_str = gen_order(idx)
         model_save_path = MODEL_DIRECTORY + MODEL_NAME + order_str + MODEL_NAME_SUFFIX
         generate_onnx_model_for_thresholded_relu(shape_list[idx],
                                                  shape_list[idx],
@@ -365,21 +361,113 @@ def write_input_and_expect_data_to_files(alpha_list, range_list, shape_list, dat
                 '[ERROR]: no such data type: {}'.format(data_type)
             )
 
-        order = idx + 1
-        order_str = str(order)
-        while not order // 100:
-            order_str = '0' + order_str
-            order *= 10
+        order_str = gen_order(idx)
 
-        if not os.path.exists(INPUT_DATA_PATH+'data_{order}'.format(order=order_str)):
-            os.mkdir(INPUT_DATA_PATH+'data_{order}'.format(order=order_str))
+        if not os.path.exists(INPUT_DATA_PATH + 'data_{order}'.format(order=order_str)):
+            os.mkdir(INPUT_DATA_PATH + 'data_{order}'.format(order=order_str))
 
-        input_data_path = INPUT_DATA_PATH+"data_{order}/Thresholded_relu_npu_{data_type}_{order}_in.bin"\
+        input_data_path = INPUT_DATA_PATH + "data_{order}/Thresholded_relu_npu_{data_type}_{order}_in.bin" \
             .format(order=order_str, data_type=DATA_TYPE)
-        gt_save_path = GROUND_TRUTH_PATH+"Thresholded_relu_npu_{data_type}_{order}_gt.bin" \
+        gt_save_path = GROUND_TRUTH_PATH + "Thresholded_relu_npu_{data_type}_{order}_gt.bin" \
             .format(order=order_str, data_type=DATA_TYPE)
 
         input_data = generate_input_data_for_thresholded_relu(shape_list[idx], range_list[idx], data_type)
         expect_data = comupte_thresholded_relu_npu(input_data, alpha_list[idx])
         input_data.tofile(input_data_path)
         expect_data.tofile(gt_save_path)
+
+
+def compare_tensor(actual_data, expect_data, data_type):
+    """
+    compare ground truth and ascend out.
+
+    Parameters
+    ----------
+    actual_data : np.ndarray
+    expect_data : np.ndarray
+    data_type : str
+    Returns
+    ------
+    None
+    """
+    if data_type.lower() == 'float16':
+        rtol = 0.001
+        atol = 0.001
+        max_atol = 0.1
+    elif data_type.lower() == 'float32':
+        rtol = 0.0001
+        atol = 0.0001
+        max_atol = 0.01
+    else:
+        print('[ERROR]: no such data type: {}'.format(data_type))
+        return
+
+    def _compare_tensor():
+        a_sub_b = actual_data - expect_data
+        abs_a_sub_b = np.abs(a_sub_b)
+        min_abs_a_b = np.abs(expect_data)
+        atol_value = min_abs_a_b * atol
+        max_cnt = 0
+        if max_atol:
+            max_atol_value = min_abs_a_b * max_atol
+            max_cmp = np.less_equal(abs_a_sub_b, max_atol_value)
+            # print("abs_a_sub_b:", abs_a_sub_b, "   max_atol_value:", max_atol_value)
+            # print("max_cmp:", max_cmp)
+            max_cmp = max_cmp.astype(np.int8)
+            # print("max_cmp:", max_cmp)
+            max_cmp = 1 - max_cmp
+            # print("max_cmp:", max_cmp)
+            max_cnt = np.sum(max_cmp)
+            # print("max_cnt:", max_cnt)
+
+        less_cmp = np.less_equal(abs_a_sub_b, atol_value)
+        # print("less_cmp:", less_cmp)
+        less_cmp = less_cmp.astype(np.int8)
+        # print("less_cmp:", less_cmp)
+        less_cmp = 1 - less_cmp
+        # print("less_cmp:", less_cmp)
+        sum_cnt = np.sum(less_cmp)
+        # print("sum_cnt", sum_cnt)
+        return sum_cnt, max_cnt
+
+    rtol_cnt, max_atol_cnt = _compare_tensor()
+    # print(rtol_cnt, max_atol_cnt, rtol * expect_data.size)
+    is_success = True
+    err_msg = ''
+    if rtol_cnt > rtol * expect_data.size:
+        is_success = False
+        err_msg = "Error count (expect - actual > atol * expect): %s, rtol is %s, total size: %s." \
+                  % (str(rtol_cnt), str(rtol), str(expect_data.size))
+    if max_atol_cnt > 0:
+        is_success = False
+        err_msg += "Max atol error count(expect - acutal > max_atol * expect): %d, max_atol is: %s" \
+                   % (max_atol_cnt, str(max_atol))
+    if is_success:
+        print('[SUCCESS]: compare success.')
+    else:
+        print('[FAILED]: ' + err_msg)
+
+
+def gen_order(idx):
+    """
+    generate the serial number of test cases or data
+    examples:
+            1 -> 001
+            2 -> 002
+            ...
+            10 -> 010
+            11 -> 011
+            ...
+    Parameters
+    ----------
+    idx:
+    Returns
+    ------
+    order_str: str
+    """
+    order = idx + 1
+    order_str = str(order)
+    while not order // 100:
+        order_str = '0' + order_str
+        order *= 10
+    return order_str
