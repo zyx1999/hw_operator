@@ -18,9 +18,10 @@ if [ ${model_amount} -gt 0 ]; then
     if [ ! -d "../ascend_out" ]; then
         mkdir "../ascend_out"
     fi
-    if [ ${data_type}=${float16} ]; then
+    if [ "${data_type}" == "${float16}" ]; then
       ./hiai_infer_florence -i ../input_data/data_${order_str} -o ../ascend_out/ -m ../om_model/Thresholded_relu_npu_fp16_${order_str}.om
-    elif [ ${data_type}=${float32} ]; then
+    fi
+    if [ "${data_type}" == "${float32}" ]; then
       ./hiai_infer_florence -i ../input_data/data_${order_str} -o ../ascend_out/ -m ../om_model/Thresholded_relu_npu_fp32_${order_str}.om
     fi
   done

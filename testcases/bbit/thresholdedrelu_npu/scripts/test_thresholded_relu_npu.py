@@ -2,10 +2,10 @@ import os
 import numpy as np
 import my_utils as my
 
-data_type = 'float16'
-ALPHA_LIST_PATH = 'csv_files/designed_alpha_fp16_test.csv'
-RANGE_LIST_PATH = 'csv_files/designed_range_fp16_test.csv'
-GEN_SHAPE_LIST_PATH = 'csv_files/generated_shape_fp16_test.csv'
+data_type = 'float32'
+ALPHA_LIST_PATH = 'csv_files/designed_alpha_fp32_test.csv'
+RANGE_LIST_PATH = 'csv_files/designed_range_fp32_test.csv'
+GEN_SHAPE_LIST_PATH = 'csv_files/generated_shape_fp32_test.csv'
 
 alpha_list = my.read_alpha_list_from_csv(ALPHA_LIST_PATH)
 range_list = my.read_range_list_from_csv(RANGE_LIST_PATH)

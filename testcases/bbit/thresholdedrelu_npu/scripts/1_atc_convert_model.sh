@@ -18,9 +18,10 @@ if [ ${model_amount} -gt 0 ]; then
     if [ ! -d "../om_model" ]; then
         mkdir "../om_model"
     fi
-    if [ ${data_type}=${float16} ]; then
+    if [ "${data_type}" == "${float16}" ]; then
       atc --model ../onnx_model/Thresholded_relu_npu_fp16_${order_str}.onnx --framework 5 --output ../om_model/Thresholded_relu_npu_fp16_${order_str} --soc_version Ascend610 --aicore_num 2
-    elif [ ${data_type}=${float32} ]; then
+    fi
+    if [ "${data_type}" == "${float32}" ]; then
       atc --model ../onnx_model/Thresholded_relu_npu_fp32_${order_str}.onnx --framework 5 --output ../om_model/Thresholded_relu_npu_fp32_${order_str} --soc_version Ascend610 --precision_mode=allow_fp32_to_fp16 --aicore_num 2
     fi
   done

@@ -447,9 +447,17 @@ def compare_tensor(actual_data, expect_data, data_type):
     else:
         print('[FAILED]: ' + err_msg)
 
-def compare_tensor_bak(ground_truth_data, ascend_out_data, data_type):
-    atol = 0.001
-    rtol = 0.001
+
+def compare_tensor_bak(ascend_out_data, ground_truth_data, data_type):
+    if data_type.lower() == 'float16':
+        atol = 0.001
+        rtol = 0.001
+    elif data_type.lower() == 'float32':
+        atol = 0.0001
+        rtol = 0.0001
+    else:
+        print('[ERROR]: no such data type: {}'.format(data_type))
+        return
     err_idx = []
     error_count = 0
     for index in range(ground_truth_data.shape[0]):
@@ -466,6 +474,7 @@ def compare_tensor_bak(ground_truth_data, ascend_out_data, data_type):
         print("Compare Success: error_count/all = {}/{}".format(
             error_count, ground_truth_data.shape[0]))
     print()
+
 
 def gen_order(idx):
     """
