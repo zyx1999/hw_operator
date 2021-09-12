@@ -33,22 +33,30 @@ def thresholded_relu_npu_compute(x, y, alpha=1.0, kernel_name="thresholded_relu_
         the result of compute
     """
     input_data_type = x.dtype.lower()
-    shape_input = x.shape
-    # alpha == 0
     if alpha == 0.0:
-        if input_data_type in "float32":
-            tensor_zero = te.lang.cce.broadcast(tvm.const(0, input_data_type), shape_input)
-            data_res = te.lang.cce.vmax(x, tensor_zero)
-        else:
-            # input_data_type in "float16"
-            data_res = te.lang.cce.vrelu(x)
-        data_res = te.lang.cce.cast_to(data_res, input_data_type)
-    # alpha > 0
+        data_res = te.lang.cce.vrelu(x)
+        res = te.lang.cce.cast_to(data_res, input_data_type)
     else:
-        scalar_zero = tvm.const(0, input_data_type)
-        scalar_alpha = tvm.const(alpha, input_data_type)
-        data_res = te.lang.cce.vcmpsel(x, scalar_alpha, 'ge', x, scalar_zero)
-    return data_res
+        scalar_zero = tvm.const(0, dtype=input_data_type)
+        scalar_alpha = tvm.const(alpha, dtype=input_data_type)
+        res = te.lang.cce.vcmpsel(x, scalar_alpha, 'ge', x, scalar_zero)
+    return res
+    # shape_input = x.shape
+    # # alpha == 0
+    # if alpha == 0.0:
+    #     if input_data_type in "float32":
+    #         tensor_zero = te.lang.cce.broadcast(tvm.const(0, input_data_type), shape_input)
+    #         data_res = te.lang.cce.vmax(x, tensor_zero)
+    #     else:
+    #         # input_data_type in "float16"
+    #         data_res = te.lang.cce.vrelu(x)
+    #     data_res = te.lang.cce.cast_to(data_res, input_data_type)
+    # # alpha > 0
+    # else:
+    #     scalar_zero = tvm.const(0, input_data_type)
+    #     scalar_alpha = tvm.const(alpha, input_data_type)
+    #     data_res = te.lang.cce.vcmpsel(x, scalar_alpha, 'ge', x, scalar_zero)
+    # return data_res
 
 
 def thresholded_relu_npu(x, y, alpha=1.0, kernel_name="thresholded_relu_npu"):

@@ -1,5 +1,5 @@
-[info] [0000000590] [tbs : basic_tb_slot.cc : 622 : tbSlotRunning] BS Slot alloc AI Core 0 to task slot 0
-[info] [0000000590] [tbs : basic_tb_slot.cc : 622 : tbSlotRunning] BS Slot alloc AI Core 1 to task slot 0
-[info] [0000000606] [tbs : basic_tb_slot.cc : 835 : serveAiCoreDone] block is completed 
-[info] [0000000606] [tbs : basic_tb_slot.cc : 839 : serveAiCoreDone] set interrupt_num_=1
-[info] [0000000607] [tbs : basic_tb_slot.cc : 399 : setInterruptNum] setInterruptNum=4294967295 
+[info] [0000000526] [tbs : basic_tb_slot.cc : 622 : tbSlotRunning] BS Slot alloc AI Core 0 to task slot 0
+[info] [0000000526] [tbs : basic_tb_slot.cc : 622 : tbSlotRunning] BS Slot alloc AI Core 1 to task slot 0
+[info] [0000000542] [tbs : basic_tb_slot.cc : 835 : serveAiCoreDone] block is completed 
+[info] [0000000542] [tbs : basic_tb_slot.cc : 839 : serveAiCoreDone] set interrupt_num_=1
+[info] [0000000543] [tbs : basic_tb_slot.cc : 399 : setInterruptNum] setInterruptNum=4294967295 

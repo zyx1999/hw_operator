@@ -22,31 +22,16 @@
 #include <string>
 
 namespace ge{
-//    IMPLEMT_INFERFUNC(ThresholdedReluNpu, ThresholdedReluNpuInferShape){
-//        vector<int64_t> x_shape = op.GetInputDesc("x").GetShape().GetDims();
-//        DataType x_dtype = op.GetInputDesc("x").GetDataType();
-//        TensorDesc y_desc = op.GetOutputDesc("y");
-//        y_desc.SetShape(ge::Shape(x_shape));
-//        y_desc.SetDataType(x_dtype);
-//        (void)op.UpdateOutputDesc("y", y_desc);
-//        return GRAPH_SUCCESS;
-//    }
-//    IMPLEMT_VERIFIER(ThresholdedReluNpu, ThresholdedReluNpuVerify){
-//        return GRAPH_SUCCESS;
-//    }
-//    INFER_FUNC_REG(ThresholdedReluNpu, ThresholdedReluNpuInferShape);
-//    VERIFY_FUNC_REG(ThresholdedReluNpu, ThresholdedReluNpuVerify);
-    IMPLEMT_VERIFIER(ThresholdedReluNpu, ThresholdedReluNpuVerify) {
-
-        return GRAPH_SUCCESS;
-    }
-    IMPLEMT_INFERFUNC(ThresholdedReluNpu, ThresholdedReluNpuInferShape) {
-        auto x_shape = op.GetInputDesc("x").GetShape().GetDims();
+    IMPLEMT_INFERFUNC(ThresholdedReluNpu, ThresholdedReluNpuInferShape){
+        vector<int64_t> x_shape = op.GetInputDesc("x").GetShape().GetDims();
         DataType x_dtype = op.GetInputDesc("x").GetDataType();
         TensorDesc y_desc = op.GetOutputDesc("y");
         y_desc.SetShape(ge::Shape(x_shape));
         y_desc.SetDataType(x_dtype);
         (void)op.UpdateOutputDesc("y", y_desc);
+        return GRAPH_SUCCESS;
+    }
+    IMPLEMT_VERIFIER(ThresholdedReluNpu, ThresholdedReluNpuVerify){
         return GRAPH_SUCCESS;
     }
     INFER_FUNC_REG(ThresholdedReluNpu, ThresholdedReluNpuInferShape);

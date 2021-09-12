@@ -38,85 +38,79 @@
 [info] tick: 17 DDR_BIU_IN_data_length: 4, Address: 10ad1044
 [info] Address 10ad1044 = [074bffff]
 [info] tick: 18 DDR_BIU_IN_data_length: 4, Address: 10ad1048
-[info] Address 10ad1048 = [070c0000]
+[info] Address 10ad1048 = [40a01000]
 [info] tick: 19 DDR_BIU_IN_data_length: 4, Address: 10ad104c
-[info] Address 10ad104c = [40a01000]
+[info] Address 10ad104c = [40c01000]
 [info] tick: 20 DDR_BIU_IN_data_length: 4, Address: 10ad1050
-[info] Address 10ad1050 = [40c01000]
+[info] Address 10ad1050 = [03c1d000]
 [info] tick: 21 DDR_BIU_IN_data_length: 4, Address: 10ad1054
-[info] Address 10ad1054 = [03c1d000]
+[info] Address 10ad1054 = [03c3d008]
 [info] tick: 22 DDR_BIU_IN_data_length: 4, Address: 10ad1058
-[info] Address 10ad1058 = [03c3d008]
+[info] Address 10ad1058 = [80400088]
 [info] tick: 23 DDR_BIU_IN_data_length: 4, Address: 10ad105c
-[info] Address 10ad105c = [80400088]
+[info] Address 10ad105c = [80400008]
 [info] tick: 24 DDR_BIU_IN_data_length: 4, Address: 10ad1060
-[info] Address 10ad1060 = [80400008]
+[info] Address 10ad1060 = [07040000]
 [info] tick: 25 DDR_BIU_IN_data_length: 4, Address: 10ad1064
-[info] Address 10ad1064 = [07040000]
+[info] Address 10ad1064 = [74440180]
+[info] tick: 25 DDR_BIU_IN_data_length: 128, Address: 10ad0200
+[info] Address 10ad0200 = [4113aa26]	Address 10ad0204 = [40a00960]	Address 10ad0208 = [408a2d45]	Address 10ad020c = [c0da19e0]
+[info] Address 10ad0210 = [40aa8574]	Address 10ad0214 = [c0d53b9f]	Address 10ad0218 = [c05dcf92]	Address 10ad021c = [c0c0de12]
+[info] Address 10ad0220 = [40cc721a]	Address 10ad0224 = [40e4dfd5]	Address 10ad0228 = [bede544f]	Address 10ad022c = [40aa16a8]
+[info] Address 10ad0230 = [3f904972]	Address 10ad0234 = [3ff62fd5]	Address 10ad0238 = [c097e5c2]	Address 10ad023c = [c057a7df]
+[info] Address 10ad0240 = [40e6e323]	Address 10ad0244 = [bfbcad82]	Address 10ad0248 = [40985345]	Address 10ad024c = [c0fbea56]
+[info] Address 10ad0250 = [c04e11f4]	Address 10ad0254 = [40a6d0ab]	Address 10ad0258 = [bfc2eab9]	Address 10ad025c = [c1067aa7]
+[info] Address 10ad0260 = [c0f24e48]	Address 10ad0264 = [bf7d454f]	Address 10ad0268 = [c0d6f3a5]	Address 10ad026c = [401a44f0]
+[info] Address 10ad0270 = [40bcbf72]	Address 10ad0274 = [403a66e6]	Address 10ad0278 = [410ccee8]	Address 10ad027c = [c103c193]
 [info] tick: 26 DDR_BIU_IN_data_length: 4, Address: 10ad1068
-[info] Address 10ad1068 = [74440180]
-[info] tick: 26 DDR_BIU_IN_data_length: 128, Address: 10ad0200
-[info] Address 10ad0200 = [3fce0c7c]	Address 10ad0204 = [3f935446]	Address 10ad0208 = [c05162c6]	Address 10ad020c = [40aa6983]
-[info] Address 10ad0210 = [40e9f034]	Address 10ad0214 = [c05b88dc]	Address 10ad0218 = [4119d1a2]	Address 10ad021c = [40a23d67]
-[info] Address 10ad0220 = [3fa11eca]	Address 10ad0224 = [be6ffb7f]	Address 10ad0228 = [40673a26]	Address 10ad022c = [4093fa76]
-[info] Address 10ad0230 = [411353f1]	Address 10ad0234 = [c105323d]	Address 10ad0238 = [410ea71e]	Address 10ad023c = [40c7d721]
-[info] Address 10ad0240 = [40ddd153]	Address 10ad0244 = [c11f3eca]	Address 10ad0248 = [400df289]	Address 10ad024c = [409b0a61]
-[info] Address 10ad0250 = [bfc6d7ed]	Address 10ad0254 = [bf82ae24]	Address 10ad0258 = [40c6c093]	Address 10ad025c = [c1078e33]
-[info] Address 10ad0260 = [bf96fb86]	Address 10ad0264 = [bfe1688f]	Address 10ad0268 = [c0af0a10]	Address 10ad026c = [40bd2a5e]
-[info] Address 10ad0270 = [408ec2bd]	Address 10ad0274 = [c036b7f1]	Address 10ad0278 = [40fda0f0]	Address 10ad027c = [bfafc239]
+[info] Address 10ad1068 = [07000080]
 [info] tick: 27 DDR_BIU_IN_data_length: 4, Address: 10ad106c
-[info] Address 10ad106c = [07000300]
+[info] Address 10ad106c = [40a01080]
 [info] tick: 28 DDR_BIU_IN_data_length: 4, Address: 10ad1070
-[info] Address 10ad1070 = [40a01080]
+[info] Address 10ad1070 = [80400090]
 [info] tick: 29 DDR_BIU_IN_data_length: 4, Address: 10ad1074
-[info] Address 10ad1074 = [80400090]
+[info] Address 10ad1074 = [80400014]
 [info] tick: 30 DDR_BIU_IN_data_length: 4, Address: 10ad1078
-[info] Address 10ad1078 = [80400014]
+[info] Address 10ad1078 = [070a0001]
 [info] tick: 31 DDR_BIU_IN_data_length: 4, Address: 10ad107c
-[info] Address 10ad107c = [070a0001]
+[info] Address 10ad107c = [074b0001]
 [info] tick: 32 DDR_BIU_IN_data_length: 4, Address: 10ad1080
-[info] Address 10ad1080 = [074b0001]
+[info] Address 10ad1080 = [40c01080]
 [info] tick: 33 DDR_BIU_IN_data_length: 4, Address: 10ad1084
-[info] Address 10ad1084 = [078b0808]
+[info] Address 10ad1084 = [07cb0100]
 [info] tick: 34 DDR_BIU_IN_data_length: 4, Address: 10ad1088
-[info] Address 10ad1088 = [07cb0100]
+[info] Address 10ad1088 = [82002f14]
 [info] tick: 35 DDR_BIU_IN_data_length: 4, Address: 10ad108c
-[info] Address 10ad108c = [82806014]
+[info] Address 10ad108c = [070400c0]
 [info] tick: 36 DDR_BIU_IN_data_length: 4, Address: 10ad1090
-[info] Address 10ad1090 = [070c0101]
+[info] Address 10ad1090 = [40e00400]
 [info] tick: 37 DDR_BIU_IN_data_length: 4, Address: 10ad1094
-[info] Address 10ad1094 = [40c01080]
+[info] Address 10ad1094 = [83400194]
 [info] tick: 38 DDR_BIU_IN_data_length: 4, Address: 10ad1098
-[info] Address 10ad1098 = [074d0001]
+[info] Address 10ad1098 = [40e00400]
 [info] tick: 39 DDR_BIU_IN_data_length: 4, Address: 10ad109c
-[info] Address 10ad109c = [070a0500]
+[info] Address 10ad109c = [82440f14]
 [info] tick: 40 DDR_BIU_IN_data_length: 4, Address: 10ad10a0
-[info] Address 10ad10a0 = [07cd0100]
+[info] Address 10ad10a0 = [02002880]
 [info] tick: 41 DDR_BIU_IN_data_length: 4, Address: 10ad10a4
-[info] Address 10ad10a4 = [40e00400]
+[info] Address 10ad10a4 = [40a00680]
 [info] tick: 42 DDR_BIU_IN_data_length: 4, Address: 10ad10a8
-[info] Address 10ad10a8 = [87ca2018]
+[info] Address 10ad10a8 = [40c00680]
 [info] tick: 43 DDR_BIU_IN_data_length: 4, Address: 10ad10ac
-[info] Address 10ad10ac = [02002880]
+[info] Address 10ad10ac = [72c22180]
 [info] tick: 44 DDR_BIU_IN_data_length: 4, Address: 10ad10b0
-[info] Address 10ad10b0 = [07040fff]
+[info] Address 10ad10b0 = [02020800]
 [info] tick: 45 DDR_BIU_IN_data_length: 4, Address: 10ad10b4
-[info] Address 10ad10b4 = [40a00680]
+[info] Address 10ad10b4 = [024202b0]
 [info] tick: 46 DDR_BIU_IN_data_length: 4, Address: 10ad10b8
-[info] Address 10ad10b8 = [40c00680]
+[info] Address 10ad10b8 = [07040fff]
 [info] tick: 47 DDR_BIU_IN_data_length: 4, Address: 10ad10bc
-[info] Address 10ad10bc = [72c25180]
+[info] Address 10ad10bc = [00c2110a]
 [info] tick: 48 DDR_BIU_IN_data_length: 4, Address: 10ad10c0
-[info] Address 10ad10c0 = [02020800]
+[info] Address 10ad10c0 = [0000120e]
 [info] tick: 49 DDR_BIU_IN_data_length: 4, Address: 10ad10c4
-[info] Address 10ad10c4 = [024202b0]
+[info] Address 10ad10c4 = [40e01800]
 [info] tick: 50 DDR_BIU_IN_data_length: 4, Address: 10ad10c8
-[info] Address 10ad10c8 = [00c2110a]
-[info] tick: 51 DDR_BIU_IN_data_length: 4, Address: 10ad10cc
-[info] Address 10ad10cc = [0000120e]
-[info] tick: 52 DDR_BIU_IN_data_length: 4, Address: 10ad10d0
-[info] Address 10ad10d0 = [40e01800]
-[info] tick: 53 DDR_BIU_IN_data_length: 4, Address: 10ad10d4
-[info] Address 10ad10d4 = [40200008]
-[info] tick: 54 DDR_BIU_IN_data_length: 4, Address: 10ad10f4
-[info] Address 10ad10f4 = [41600000]
+[info] Address 10ad10c8 = [40200008]
+[info] tick: 51 DDR_BIU_IN_data_length: 4, Address: 10ad10e8
+[info] Address 10ad10e8 = [41600000]

@@ -564,7 +564,7 @@
             "case_name": "add_precision_case_2",
             "run_soc": "Ascend310",
             "status": "failed",
-            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 23, max_atol is: 0.1 ",
+            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 13, max_atol is: 0.1 ",
             "trace_detail": {
                 "run_soc": "Ascend310",
                 "ut_case_info": {
@@ -650,7 +650,7 @@
                     {
                         "status": "failed",
                         "result": null,
-                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 23, max_atol is: 0.1 ",
+                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 13, max_atol is: 0.1 ",
                         "stage_name": null,
                         "err_trace": null
                     }
@@ -662,7 +662,7 @@
             "case_name": "add_precision_case_3",
             "run_soc": "Ascend310",
             "status": "failed",
-            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 8, max_atol is: 0.1 ",
+            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 6, max_atol is: 0.1 ",
             "trace_detail": {
                 "run_soc": "Ascend310",
                 "ut_case_info": {
@@ -747,7 +747,7 @@
                     {
                         "status": "failed",
                         "result": null,
-                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 8, max_atol is: 0.1 ",
+                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Max atol error count(expect - actual > max_atol * expect): 6, max_atol is: 0.1 ",
                         "stage_name": null,
                         "err_trace": null
                     }
@@ -758,8 +758,8 @@
             "op_type": "thresholded_relu_npu",
             "case_name": "add_precision_case_4",
             "run_soc": "Ascend310",
-            "status": "success",
-            "err_msg": null,
+            "status": "failed",
+            "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Error count (expect - actual > atol * expect): 13, rtol is: 0.0001, total size: 32. ",
             "trace_detail": {
                 "run_soc": "Ascend310",
                 "ut_case_info": {
@@ -831,9 +831,9 @@
                         "err_trace": null
                     },
                     {
-                        "status": "success",
+                        "status": "failed",
                         "result": null,
-                        "err_msg": null,
+                        "err_msg": "run op test failed(compare precision failed) not as except success. Detail message:Error count (expect - actual > atol * expect): 13, rtol is: 0.0001, total size: 32. ",
                         "stage_name": null,
                         "err_trace": null
                     }

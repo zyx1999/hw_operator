@@ -447,6 +447,25 @@ def compare_tensor(actual_data, expect_data, data_type):
     else:
         print('[FAILED]: ' + err_msg)
 
+def compare_tensor_bak(ground_truth_data, ascend_out_data, data_type):
+    atol = 0.001
+    rtol = 0.001
+    err_idx = []
+    error_count = 0
+    for index in range(ground_truth_data.shape[0]):
+        gt_data = ground_truth_data[index]
+        asc_out = ascend_out_data[index]
+        if abs(gt_data - asc_out) > min(abs(gt_data), abs(asc_out)) * atol:
+            error_count += 1
+            err_idx.append(index)
+    error_rate = error_count / ground_truth_data.shape[0]
+    if error_rate > rtol:
+        print("Compare Failed: error_count/all = {}/{}".format(
+            error_count, ground_truth_data.shape[0]))
+    else:
+        print("Compare Success: error_count/all = {}/{}".format(
+            error_count, ground_truth_data.shape[0]))
+    print()
 
 def gen_order(idx):
     """

@@ -15,67 +15,36 @@
 #include "ge_onnx.pb.h"
 #include "register/register.h"
 #include <string>
-
-namespace domi {
+namespace domi{
     Status ParseParamsThresholdedRelu(const Message *op_src, ge::Operator& op_dst)
     {
         const ge::onnx::NodeProto *node = reinterpret_cast<const ge::onnx::NodeProto*>(op_src);
         if (node == nullptr) {
-            // OP_LOGE(op_dst.GetName().c_str(), "Dynamic cast op_src to NodeProto failed.");
+            //OP_LOGE(op_dst.GetName().c_str(), "Dynamic cast op_src to NodeProto failed.");
+            printf("Dynamic cast op_src to NodeProto failed.");
             return FAILED;
         }
 
-        float threshold = 1.0f;
+        float alpha = 0.0f;
         bool bFindAlpha = false;
         for (auto attr : node->attribute()) {
             if (attr.name() == "alpha") {
                 bFindAlpha = true;
-                threshold = attr.f();
+                alpha = attr.f();
                 break;
             }
         }
 
         if (!bFindAlpha) {
-            threshold = 1.0f;
+            alpha = 1.0f;
         }
-        op_dst.SetAttr("threshold", threshold);
+        op_dst.SetAttr("alpha", alpha);
         return SUCCESS;
     }
-
+    // register thresholded relu op info to GE
     REGISTER_CUSTOM_OP("ThresholdedReluNpu")
     .FrameworkType(ONNX)
     .OriginOpType("ai.onnx::11::ThresholdedReluNpu")
     .ParseParamsFn(ParseParamsThresholdedRelu)
     .ImplyType(ImplyType::TVM);
-//    Status ParseParamsThresholdedRelu(const Message *op_src, ge::Operator& op_dst)
-//    {
-//        const ge::onnx::NodeProto *node = reinterpret_cast<const ge::onnx::NodeProto*>(op_src);
-//        if (node == nullptr) {
-//            //OP_LOGE(op_dst.GetName().c_str(), "Dynamic cast op_src to NodeProto failed.");
-//            printf("Dynamic cast op_src to NodeProto failed.");
-//            return FAILED;
-//        }
-//
-//        float alpha = 0.0f;
-//        bool bFindAlpha = false;
-//        for (auto attr : node->attribute()) {
-//            if (attr.name() == "alpha") {
-//                bFindAlpha = true;
-//                alpha = attr.f();
-//                break;
-//            }
-//        }
-//
-//        if (!bFindAlpha) {
-//            alpha = 1.0f;
-//        }
-//        op_dst.SetAttr("alpha", alpha);
-//        return SUCCESS;
-//    }
-//    // register thresholded relu op info to GE
-//    REGISTER_CUSTOM_OP("ThresholdedReluNpu")
-//    .FrameworkType(ONNX)
-//    .OriginOpType("ai.onnx::11::ThresholdedReluNpu")
-//    .ParseParamsFn(ParseParamsThresholdedRelu)
-//    .ImplyType(ImplyType::TVM);
 } // namespace domi

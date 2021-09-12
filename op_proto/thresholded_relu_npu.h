@@ -21,15 +21,10 @@
 #define GE_OP_THRESHOLDEDRELUNPU_H
 #include "graph/operator_reg.h"
 namespace ge{
-//REG_OP(ThresholdedReluNpu)
-//    .INPUT(x, TensorType({DT_FLOAT16,DT_FLOAT}))
-//    .ATTR(alpha, Float, 1.0)
-//    .OUTPUT(y, TensorType({DT_FLOAT16,DT_FLOAT}))
-//    .OP_END_FACTORY_REG(ThresholdedReluNpu)
-    REG_OP(ThresholdedReluNpu)
-    .INPUT(x, TensorType({DT_FLOAT, DT_FLOAT16}))
-    .ATTR(threshold, Float, 1.0)
-    .OUTPUT(y, TensorType({DT_FLOAT, DT_FLOAT16}))
+REG_OP(ThresholdedReluNpu)
+    .INPUT(x, TensorType({DT_FLOAT16,DT_FLOAT}))
+    .ATTR(alpha, Float, 1.0)
+    .OUTPUT(y, TensorType({DT_FLOAT16,DT_FLOAT}))
     .OP_END_FACTORY_REG(ThresholdedReluNpu)
 }
 #endif
