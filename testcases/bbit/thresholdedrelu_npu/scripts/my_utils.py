@@ -298,6 +298,37 @@ def generate_input_shape(low, high, dim, amount):
     input_shape_list = input_shape_list.tolist()
     return input_shape_list
 
+def generate_alpha_list(range_list, data_type):
+    """
+    generate alpha_list in each range.
+
+    Parameters
+    ----------
+    range_list: list, 2-dimensional list
+    data_type: str
+
+    Returns
+    ------
+    alpha_list: list, 1-dimensional list
+    """
+    if data_type.lower() == 'float16':
+        np_data_type = np.float16
+    elif data_type.lower() == 'float32':
+        np_data_type = np.float32
+    else:
+        print('[ERROR]: no such data type: {}'.format(data_type))
+        return
+    alpha_list = np.empty(0)
+    for idx in range(len(range_list)):
+        low = range_list[idx][0]
+        if low < 0:
+            low = 0
+        high = range_list[idx][1]
+        alpha = np.random.uniform(low, high)
+        alpha_list = np.append(alpha_list, alpha)
+    alpha_list = alpha_list.astype(np_data_type)
+    alpha_list = alpha_list.tolist()
+    return alpha_list
 
 def write_shape_list_to_csv(file_path, shape_list):
     """
@@ -322,6 +353,28 @@ def write_shape_list_to_csv(file_path, shape_list):
             csv_writer.writerow([temp_shape])
     print('[SUCCESS]: write shape_list to csv file: ' + file_path)
 
+def write_alpha_list_to_csv(file_path, alpha_list):
+    """
+    write alpha_list to a csv file.
+
+    Parameters
+    ----------
+    file_path : str
+    alpha_list: list, 2-dimensional list
+
+    Returns
+    ------
+    None
+    """
+    temp_alpha_list = list()
+    for alpha in alpha_list:
+        temp_alpha_list.append('[' + str(alpha) + ']')
+
+    with open(file_path, 'w') as csv_file:
+        csv_writer = csv.writer(csv_file)
+        for temp_alpha in temp_alpha_list:
+            csv_writer.writerow([temp_alpha])
+    print('[SUCCESS]: write shape_list to csv file: ' + file_path)
 
 def write_input_and_expect_data_to_files(alpha_list, range_list, shape_list, data_type):
     """
