@@ -430,9 +430,72 @@ def write_input_and_expect_data_to_files(alpha_list, range_list, shape_list, dat
         expect_data.tofile(gt_save_path)
 
 
-def compare_tensor(actual_data, expect_data, data_type):
+def compare_tensor(actual_data, expect_data, data_type, file_name):
     """
     compare ground truth and ascend out.
+
+    Parameters
+    ----------
+    actual_data : np.ndarray
+    expect_data : np.ndarray
+    data_type : str
+    file_name : file name for error points
+    Returns
+    ------
+    None
+    """
+    if data_type.lower() == 'float16':
+        rtol = 0.001
+        atol = 0.001
+    elif data_type.lower() == 'float32':
+        rtol = 0.0001
+        atol = 0.0001
+    else:
+        print('[ERROR]: no such data type: {}'.format(data_type))
+        return
+
+    def _write_error_points_to_file(file_path, error_points):
+        with open(file_path, 'w') as csv_file:
+            csv_writer = csv.writer(csv_file)
+            head = ['error_index', 'ascend_out', 'ground_truth']
+            csv_writer.writerow(head)
+            for point in error_points:
+                csv_writer.writerow(point)
+
+    def _compare_tensor():
+        a_sub_b = actual_data - expect_data
+        abs_a_sub_b = np.abs(a_sub_b)
+        min_abs_a_b = np.abs(expect_data)
+        atol_value = min_abs_a_b * atol
+        less_cmp = np.less_equal(abs_a_sub_b, atol_value)
+        less_cmp = less_cmp.astype(np.int8)
+        less_cmp = 1 - less_cmp
+        sum_cnt = np.sum(less_cmp)
+        return sum_cnt, less_cmp
+
+    rtol_cnt, less_cmp = _compare_tensor()
+    error_points_list = []
+    for idx in range(len(less_cmp)):
+        if less_cmp[idx] == 1:
+            error_points_list.append((idx, actual_data[idx], expect_data[idx]))
+
+    _write_error_points_to_file('../csv_files/error_points/'+file_name, error_points_list)
+
+    is_success = True
+    err_msg = ''
+    if rtol_cnt > rtol * expect_data.size:
+        is_success = False
+        err_msg = "Error count (expect - actual > atol * expect): %s, rtol is %s, total size: %s." \
+                  % (str(rtol_cnt), str(rtol), str(expect_data.size))
+    if is_success:
+        print('[SUCCESS]: compare success.')
+    else:
+        print('[FAILED]: ' + err_msg)
+
+
+def compare_tensor_bak(actual_data, expect_data, data_type):
+    """
+    another algorithm for comparing ground truth and ascend out.
 
     Parameters
     ----------
@@ -444,65 +507,6 @@ def compare_tensor(actual_data, expect_data, data_type):
     None
     """
     if data_type.lower() == 'float16':
-        rtol = 0.001
-        atol = 0.001
-        max_atol = 0.1
-    elif data_type.lower() == 'float32':
-        rtol = 0.0001
-        atol = 0.0001
-        max_atol = 0.01
-    else:
-        print('[ERROR]: no such data type: {}'.format(data_type))
-        return
-
-    def _compare_tensor():
-        a_sub_b = actual_data - expect_data
-        abs_a_sub_b = np.abs(a_sub_b)
-        min_abs_a_b = np.abs(expect_data)
-        atol_value = min_abs_a_b * atol
-        max_cnt = 0
-        if max_atol:
-            max_atol_value = min_abs_a_b * max_atol
-            max_cmp = np.less_equal(abs_a_sub_b, max_atol_value)
-            # print("abs_a_sub_b:", abs_a_sub_b, "   max_atol_value:", max_atol_value)
-            # print("max_cmp:", max_cmp)
-            max_cmp = max_cmp.astype(np.int8)
-            # print("max_cmp:", max_cmp)
-            max_cmp = 1 - max_cmp
-            # print("max_cmp:", max_cmp)
-            max_cnt = np.sum(max_cmp)
-            # print("max_cnt:", max_cnt)
-
-        less_cmp = np.less_equal(abs_a_sub_b, atol_value)
-        # print("less_cmp:", less_cmp)
-        less_cmp = less_cmp.astype(np.int8)
-        # print("less_cmp:", less_cmp)
-        less_cmp = 1 - less_cmp
-        # print("less_cmp:", less_cmp)
-        sum_cnt = np.sum(less_cmp)
-        # print("sum_cnt", sum_cnt)
-        return sum_cnt, max_cnt
-
-    rtol_cnt, max_atol_cnt = _compare_tensor()
-    # print(rtol_cnt, max_atol_cnt, rtol * expect_data.size)
-    is_success = True
-    err_msg = ''
-    if rtol_cnt > rtol * expect_data.size:
-        is_success = False
-        err_msg = "Error count (expect - actual > atol * expect): %s, rtol is %s, total size: %s." \
-                  % (str(rtol_cnt), str(rtol), str(expect_data.size))
-    if max_atol_cnt > 0:
-        is_success = False
-        err_msg += "Max atol error count(expect - acutal > max_atol * expect): %d, max_atol is: %s" \
-                   % (max_atol_cnt, str(max_atol))
-    if is_success:
-        print('[SUCCESS]: compare success.')
-    else:
-        print('[FAILED]: ' + err_msg)
-
-
-def compare_tensor_bak(ascend_out_data, ground_truth_data, data_type):
-    if data_type.lower() == 'float16':
         atol = 0.001
         rtol = 0.001
     elif data_type.lower() == 'float32':
@@ -513,20 +517,21 @@ def compare_tensor_bak(ascend_out_data, ground_truth_data, data_type):
         return
     err_idx = []
     error_count = 0
-    for index in range(ground_truth_data.shape[0]):
-        gt_data = ground_truth_data[index]
-        asc_out = ascend_out_data[index]
+    for index in range(expect_data.shape[0]):
+        gt_data = expect_data[index]
+        asc_out = actual_data[index]
         if abs(gt_data - asc_out) > min(abs(gt_data), abs(asc_out)) * atol:
             error_count += 1
             err_idx.append(index)
-    error_rate = error_count / ground_truth_data.shape[0]
+    error_rate = error_count / expect_data.shape[0]
     if error_rate > rtol:
         print("Compare Failed: error_count/all = {}/{}".format(
-            error_count, ground_truth_data.shape[0]))
+            error_count, expect_data.shape[0]))
     else:
         print("Compare Success: error_count/all = {}/{}".format(
-            error_count, ground_truth_data.shape[0]))
+            error_count, expect_data.shape[0]))
     print()
+
 
 
 def gen_order(idx):
