@@ -453,8 +453,11 @@ def compare_tensor(actual_data, expect_data, data_type, file_name):
     else:
         print('[ERROR]: no such data type: {}'.format(data_type))
         return
+    ERROR_POINST_DIR = '../csv_files/error_points/'
 
     def _write_error_points_to_file(file_path, error_points):
+        if not os.path.exists(ERROR_POINST_DIR):
+            os.mkdir(ERROR_POINST_DIR)
         with open(file_path, 'w') as csv_file:
             csv_writer = csv.writer(csv_file)
             head = ['error_index', 'ascend_out', 'ground_truth']
@@ -479,10 +482,11 @@ def compare_tensor(actual_data, expect_data, data_type, file_name):
         if less_cmp[idx] == 1:
             error_points_list.append((idx, actual_data[idx], expect_data[idx]))
 
-    _write_error_points_to_file('../csv_files/error_points/'+file_name, error_points_list)
+    _write_error_points_to_file(ERROR_POINST_DIR+file_name, error_points_list)
 
     is_success = True
     err_msg = ''
+    print('CASE NAME: '+file_name)
     if rtol_cnt > rtol * expect_data.size:
         is_success = False
         err_msg = "Error count (expect - actual > atol * expect): %s, rtol is %s, total size: %s." \
@@ -491,6 +495,7 @@ def compare_tensor(actual_data, expect_data, data_type, file_name):
         print('[SUCCESS]: compare success.')
     else:
         print('[FAILED]: ' + err_msg)
+    print()
 
 
 def compare_tensor_bak(actual_data, expect_data, data_type):
