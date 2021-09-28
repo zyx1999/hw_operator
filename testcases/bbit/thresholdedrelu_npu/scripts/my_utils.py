@@ -161,7 +161,7 @@ def comupte_thresholded_relu_npu(input_data, alpha=1.0):
             "while ALPHA is " + str(alpha)
         )
     expect_data = input_data.copy()
-    expect_data[expect_data <= alpha] = 0
+    expect_data[expect_data < alpha] = 0
     return expect_data
 
 
@@ -324,7 +324,10 @@ def generate_alpha_list(range_list, data_type):
         if low < 0:
             low = 0
         high = range_list[idx][1]
-        alpha = np.random.uniform(low, high)
+        if high < 0:
+            alpha = 1
+        else:
+            alpha = np.random.uniform(low, high)
         alpha_list = np.append(alpha_list, alpha)
     alpha_list = alpha_list.astype(np_data_type)
     alpha_list = alpha_list.tolist()
@@ -391,7 +394,7 @@ def write_input_and_expect_data_to_files(alpha_list, range_list, shape_list, dat
     None
     """
     GROUND_TRUTH_PATH = './ground_truth/'
-    INPUT_DATA_PATH = './input_data/'
+    INPUT_DATA_PATH = './scripts/input_data/'
     if not os.path.exists(GROUND_TRUTH_PATH):
         os.mkdir(GROUND_TRUTH_PATH)
 
@@ -453,7 +456,7 @@ def compare_tensor(actual_data, expect_data, data_type, file_name):
     else:
         print('[ERROR]: no such data type: {}'.format(data_type))
         return
-    ERROR_POINST_DIR = '../csv_files/error_points/'
+    ERROR_POINST_DIR = './error_points/'
 
     def _write_error_points_to_file(file_path, error_points):
         if not os.path.exists(ERROR_POINST_DIR):

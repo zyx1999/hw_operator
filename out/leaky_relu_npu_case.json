@@ -1,5 +1,5 @@
 {
-    "/home/allen/AscendProjects/thresholdedRelu_zyx/testcases/ut/ops_test/leaky_relu_npu/test_leaky_relu_npu_impl.py": [
+    "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/testcases/ut/ops_test/leaky_relu_npu/test_leaky_relu_npu_impl.py": [
         {
             "op_type": "leakey_relu_npu",
             "case_name": "test_leakey_relu_npu_auto_case_name_1",

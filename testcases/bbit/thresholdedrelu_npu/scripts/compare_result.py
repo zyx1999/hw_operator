@@ -2,8 +2,8 @@ import os
 import numpy as np
 import my_utils as my
 # load data
-GROUND_TRUTH_DIR = '../ground_truth/'
-ASCEND_OUT_DIR = '../ascend_out/'
+GROUND_TRUTH_DIR = './ground_truth/'
+ASCEND_OUT_DIR = './ascend_out/'
 OP_NAME = 'Thresholded_relu_npu'
 DATA_TYPE = '_fp16_'
 # DATA_TYPE = '_fp32_'

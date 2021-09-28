@@ -16,10 +16,10 @@ if [ ${model_amount} -gt 0 ]; then
     done
     echo ${order_str}
     if [ "${data_type}" == "${float16}" ]; then
-      mv ../ascend_out/Thresholded_relu_npu_fp16_${order_str}_in_ThresholdedReluNpu_0:0.bin ../ascend_out/Thresholded_relu_npu_fp16_${order_str}_out.bin
+      mv ./ascend_out/Thresholded_relu_npu_fp16_${order_str}_in_ThresholdedReluNpu_0:0.bin ./ascend_out/Thresholded_relu_npu_fp16_${order_str}_out.bin
     fi
     if [ "${data_type}" == "${float32}" ]; then
-      mv ../ascend_out/Thresholded_relu_npu_fp32_${order_str}_in_ThresholdedReluNpu_0:0.bin ../ascend_out/Thresholded_relu_npu_fp32_${order_str}_out.bin
+      mv ./ascend_out/Thresholded_relu_npu_fp32_${order_str}_in_ThresholdedReluNpu_0:0.bin ./ascend_out/Thresholded_relu_npu_fp32_${order_str}_out.bin
     fi
   done
 fi

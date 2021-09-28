@@ -15,14 +15,14 @@ if [ ${model_amount} -gt 0 ]; then
         order=$[ $order * 10 ]
     done
     echo ${order_str}
-    if [ ! -d "../ascend_out" ]; then
-        mkdir "../ascend_out"
+    if [ ! -d "./ascend_out" ]; then
+        mkdir "./ascend_out"
     fi
     if [ "${data_type}" == "${float16}" ]; then
-      ./hiai_infer_florence -i ../input_data/data_${order_str} -o ../ascend_out/ -m ../om_model/Thresholded_relu_npu_fp16_${order_str}.om
+      ./hiai_infer_florence -i ./input_data/data_${order_str} -o ./ascend_out/ -m ./om_model/Thresholded_relu_npu_fp16_${order_str}.om
     fi
     if [ "${data_type}" == "${float32}" ]; then
-      ./hiai_infer_florence -i ../input_data/data_${order_str} -o ../ascend_out/ -m ../om_model/Thresholded_relu_npu_fp32_${order_str}.om
+      ./hiai_infer_florence -i ./input_data/data_${order_str} -o ./ascend_out/ -m ./om_model/Thresholded_relu_npu_fp32_${order_str}.om
     fi
   done
 
