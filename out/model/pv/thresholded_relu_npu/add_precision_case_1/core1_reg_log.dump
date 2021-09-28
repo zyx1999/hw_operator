@@ -64,7 +64,7 @@
 [info] tick: 0, write spr reg: 61, value: 3f
 [info] tick: 0, write spr reg: 1f, value: 7fa5
 [info] tick: 0, write spr reg: 4, value: 10bd1000
-[info] tick: 0, write spr reg: 8, value: 1029fe00
+[info] tick: 0, write spr reg: 8, value: 1051fe00
 [info] tick: 0, write spr reg: 21, value: 0
 [info] tick: 0, write spr reg: 5, value: 1
 [info] tick: 0, write spr reg: d, value: 2
@@ -220,7 +220,7 @@
 [info] tick: 7, write spr reg: 4, value: 10bd101c
 [info] tick: 7, write gpr reg: 1, value: 12
 [info] tick: 8, write spr reg: 4, value: 10bd1020
-[info] tick: 8, write gpr reg: 0, value: 1029fe00
+[info] tick: 8, write gpr reg: 0, value: 1051fe00
 [info] tick: 9, write spr reg: 4, value: 10bd1024
 [info] tick: 9, write gpr reg: 1, value: 10012
 [info] tick: 10, write spr reg: 4, value: 10bd1028

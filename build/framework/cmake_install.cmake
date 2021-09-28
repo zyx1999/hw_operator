@@ -1,4 +1,4 @@
-# Install script for directory: /home/allen/AscendProjects/thresholdedRelu_zyx/framework
+# Install script for directory: /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/allen/AscendProjects/thresholdedRelu_zyx/build/framework/onnx_plugin/cmake_install.cmake")
+  include("/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/framework/onnx_plugin/cmake_install.cmake")
 
 endif()
 

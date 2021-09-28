@@ -1,4 +1,4 @@
-# Install script for directory: /home/allen/AscendProjects/thresholdedRelu_zyx/framework/onnx_plugin
+# Install script for directory: /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

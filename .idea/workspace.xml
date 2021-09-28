@@ -23,11 +23,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CPP" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Add_npu" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +45,7 @@
       <recent name="$PROJECT_DIR$/framework/onnx_plugin" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_thresholded_relu_npu">
+  <component name="RunManager" selected="Python.vector_dup">
     <configuration default="true" type="AscendOperatorConfigurationType" factoryName="Ascend Operator" testingType="" hostip="" operatorName="" testcaseId="" testcaseClassName="" testcaseName="" executorFileName="" netCommandArgument="" SOC_VERSION_KEY="Ascend310" CORE_TYPE_KEY="" AI_CORE_NUM_KEY="" MAX_AI_CORE_NUM_KEY="" L1_FUSION_KEY="" runTarget="" ustTestcasePath="" stTestKeyId="" stGenerateData="true" compileOperator="true" stRunST="true" runCoverageReport="true">
       <method v="2" />
     </configuration>
@@ -58,28 +58,7 @@
     <configuration name="ut_proto_thresholded_relu_npu" type="AscendOperatorConfigurationType" factoryName="Ascend Operator" testingType="ut_proto" hostip="" operatorName="" testcaseId="" testcaseClassName="" testcaseName="" executorFileName="" netCommandArgument="" SOC_VERSION_KEY="Ascend310" CORE_TYPE_KEY="" AI_CORE_NUM_KEY="" MAX_AI_CORE_NUM_KEY="" L1_FUSION_KEY="" runTarget="" ustTestcasePath="" stTestKeyId="thresholded_relu_npu" stGenerateData="true" compileOperator="true" stRunST="true" runCoverageReport="true" utRunCaseNames="ThresholdedReluNpuTest.thresholded_relu_npu_test_case_1:ThresholdedReluNpuTest.thresholded_relu_npu_test_case_2">
       <method v="2" />
     </configuration>
-    <configuration name="my_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ONNX_Sample" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts/my_utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="data_move" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ONNX_Sample" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,7 +70,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tbe/impl/data_move.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_lk" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scalar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ONNX_Sample" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,11 +87,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tbe/impl" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/test_lk.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tbe/impl/scalar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_thresholded_relu_npu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scalar_compute" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ONNX_Sample" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tbe/impl" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts/test_thresholded_relu_npu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tbe/impl/scalar_compute.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,46 +121,82 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ss.sh" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts/atc_convert_model.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <configuration name="tensor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ONNX_Sample" />
       <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tbe/impl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tbe/impl/tensor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vector_dup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ONNX_Sample" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tbe/impl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tbe/impl/vector_dup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Ascend Operator.ut_impl_leaky_relu_npu" />
       <item itemvalue="Ascend Operator.ut_impl_thresholded_relu_npu" />
       <item itemvalue="Ascend Operator.ut_proto_thresholded_relu_npu" />
-      <item itemvalue="Python.my_utils" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.test_lk" />
-      <item itemvalue="Python.test_thresholded_relu_npu" />
-      <item itemvalue="Shell Script.ss.sh" />
+      <item itemvalue="Python.data_move" />
+      <item itemvalue="Python.scalar" />
+      <item itemvalue="Python.scalar_compute" />
+      <item itemvalue="Python.tensor" />
+      <item itemvalue="Python.vector_dup" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_thresholded_relu_npu" />
-        <item itemvalue="Shell Script.ss.sh" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test_lk" />
-        <item itemvalue="Python.my_utils" />
+        <item itemvalue="Python.vector_dup" />
+        <item itemvalue="Python.data_move" />
+        <item itemvalue="Python.scalar_compute" />
+        <item itemvalue="Python.tensor" />
+        <item itemvalue="Python.scalar" />
       </list>
     </recent_temporary>
   </component>
   <component name="WindowStateProjectService">
+    <state x="448" y="124" key="#Project_Structure" timestamp="1631860315657">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="448" y="124" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1631860315657" />
     <state x="192" y="118" width="1071" height="654" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631112644025">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="192" y="118" width="1071" height="654" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1631112644025" />
-    <state x="435" y="263" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1630580626531">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="580" y="316" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632114500345">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="435" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1630580626531" />
+    <state x="580" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1632114500345" />
     <state x="458" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631634812192">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -198,26 +213,31 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="350" y="189" key="#ut_proto_thresholded_relu_npu/0.0.1440.900@0.0.1440.900" timestamp="1630513258982" />
-    <state x="515" y="222" key="FileChooserDialogImpl" timestamp="1631636686588">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="687" y="266" key="FileChooserDialogImpl" timestamp="1631930819724">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="515" y="222" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1631636686588" />
-    <state width="1419" height="297" key="GridCell.Tab.0.bottom" timestamp="1631634910309">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="687" y="266" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1631930819724" />
+    <state width="1899" height="299" key="GridCell.Tab.0.bottom" timestamp="1632229236963">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631634910309" />
-    <state width="1419" height="297" key="GridCell.Tab.0.center" timestamp="1631634910308">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1632229236963" />
+    <state width="1899" height="299" key="GridCell.Tab.0.center" timestamp="1632229236960">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631634910308" />
-    <state width="1419" height="297" key="GridCell.Tab.0.left" timestamp="1631634910307">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="299" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1632229236960" />
+    <state width="1899" height="299" key="GridCell.Tab.0.left" timestamp="1632229236957">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631634910307" />
-    <state width="1419" height="297" key="GridCell.Tab.0.right" timestamp="1631634910309">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="299" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1632229236957" />
+    <state width="1899" height="299" key="GridCell.Tab.0.right" timestamp="1632229236962">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631634910309" />
+    <state width="1899" height="299" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1632229236962" />
     <state width="1419" height="261" key="GridCell.Tab.1.bottom" timestamp="1630581493540">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -234,13 +254,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="261" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1630581493539" />
-    <state x="215" y="42" key="SettingsEditor" timestamp="1631120367970">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="287" y="50" key="SettingsEditor" timestamp="1631931195339">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="215" y="42" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1631120367970" />
-    <state x="391" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1631549918079">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="287" y="50" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1631931195339" />
+    <state x="521" y="251" width="896" height="814" key="search.everywhere.popup" timestamp="1631931571444">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="391" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1631549918079" />
+    <state x="521" y="251" width="896" height="814" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1631931571444" />
   </component>
 </project>

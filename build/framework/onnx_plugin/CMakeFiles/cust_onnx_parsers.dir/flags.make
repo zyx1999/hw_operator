@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -D_GLIBCXX_USE_CXX11_ABI=0 -Dcust_onnx_parsers_EXPORTS
 
-CXX_INCLUDES = -I/home/allen/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include 
+CXX_INCLUDES = -I/home/zhaoyuxuan/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include 
 
