@@ -7,6 +7,10 @@ import te.lang.cce
 from te import tvm
 from te.platform.fusion_manager import fusion_manager
 from topi import generic
+from te.utils import para_check
+
+SHAPE_SIZE_LIMIT = 2147483648  # shape limit
+
 
 # pylint: disable=invalid-name,unused-argument
 @fusion_manager.register("thresholded_relu_npu")
@@ -43,6 +47,9 @@ def thresholded_relu_npu_compute(x, y, alpha=1.0, kernel_name="thresholded_relu_
     return res
 
 
+# pylint: disable=redefined-builtin
+@para_check.check_op_params(para_check.REQUIRED_INPUT, para_check.REQUIRED_OUTPUT,
+                            para_check.OPTION_ATTR_FLOAT, para_check.KERNEL_NAME)
 def thresholded_relu_npu(x, y, alpha=1.0, kernel_name="thresholded_relu_npu"):
     """
     calculate thresholded_relu
@@ -64,28 +71,21 @@ def thresholded_relu_npu(x, y, alpha=1.0, kernel_name="thresholded_relu_npu"):
     """
     # check input tensor shape
     shape_x = x.get("shape")
-    input_data_type = x.get("dtype").lower()
+    para_check.check_shape(shape=shape_x, param_name='x')
 
     # check input tensor data type
-    check_list = ["float16", "float32"]
-    if input_data_type not in check_list:
-        raise RuntimeError(
-            "thresholded relu only support %s while dtype is %s"
-            % (",".join(check_list), input_data_type))
+    check_list = ("float16", "float32")
+    input_dtype = x.get("dtype").lower()
+    para_check.check_dtype(dtype=input_dtype, check_list=check_list, param_name='x')
 
-    # check param: alpha
-    if alpha < 0:
-        raise RuntimeError(
-            "threshold location of activation ALPHA should greater than or equal 0."
-        )
+    # check param: alpha(float) should >= 0
+    _check_param_alpha(alpha=alpha, op_name='thresholded_relu_npu')
 
     # set placeholder for input
-    input_data_x = tvm.placeholder(shape_x, name="input_data_x", dtype=input_data_type)
+    input_data_x = tvm.placeholder(shape_x, dtype=input_dtype, name="input_data_x")
 
     with tvm.target.cce():
-        # call _compute function
         result = thresholded_relu_npu_compute(input_data_x, y, alpha, kernel_name)
-        # auto schedule
         schedule = generic.auto_schedule(result)
 
     config = {
@@ -95,3 +95,17 @@ def thresholded_relu_npu(x, y, alpha=1.0, kernel_name="thresholded_relu_npu"):
     }
     # build
     te.lang.cce.cce_build_code(schedule, config)
+
+
+def _check_param_alpha(alpha, op_name):
+    if alpha < 0:
+        error_info = {
+            'op_name': op_name,
+            'attr_name': 'alpha',
+            'attr_actual_value': alpha
+        }
+        raise RuntimeError(
+            "In op[%s], the threshold location of activation [%s] should greater than or equal 0, "
+            "but actually is [%s]." % (error_info['op_name'],
+                                       error_info['attr_name'],
+                                       error_info['attr_actual_value']))
