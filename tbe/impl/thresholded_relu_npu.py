@@ -9,8 +9,6 @@ from te.platform.fusion_manager import fusion_manager
 from topi import generic
 from te.utils import para_check
 
-SHAPE_SIZE_LIMIT = 2147483648  # shape limit
-
 
 # pylint: disable=invalid-name,unused-argument
 @fusion_manager.register("thresholded_relu_npu")
