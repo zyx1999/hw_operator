@@ -172,17 +172,17 @@ memory
 vector
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/./leaky_relu_npu.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/./leaky_relu_npu.h
 graph/operator_reg.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/./graph/operator_reg.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/./graph/operator_reg.h
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.cpp
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.cpp
 abs_npu.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.h
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.h
 graph/operator_reg.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/graph/operator_reg.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/graph/operator_reg.h
 vector
 -
 string
@@ -190,23 +190,23 @@ string
 iostream
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/leaky_relu_npu.cpp
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/leaky_relu_npu.cpp
 ./leaky_relu_npu.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/./leaky_relu_npu.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/./leaky_relu_npu.h
 string
 -
 vector
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.cpp
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.cpp
 thresholded_relu_npu.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.h
 vector
 -
 string
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.h
 graph/operator_reg.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/graph/operator_reg.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/graph/operator_reg.h
 

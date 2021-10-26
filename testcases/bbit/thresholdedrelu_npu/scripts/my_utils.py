@@ -540,7 +540,45 @@ def compare_tensor_bak(actual_data, expect_data, data_type):
             error_count, expect_data.shape[0]))
     print()
 
+def compare(begin, end, OP_NAME='Thresholded_relu_npu', dtype='float16'):
+    """
+    another algorithm for comparing ground truth and ascend out.
 
+    Parameters
+    ----------
+    begin : int
+    end : int
+    OP_NAME : str
+    dtype : str
+    Returns
+    ------
+    None
+    """
+    # load data
+    GROUND_TRUTH_DIR = './ground_truth/'
+    ASCEND_OUT_DIR = './ascend_out/'
+    GROUND_TRUTH_SUFFIX = '_gt.bin'
+    ASCEND_OUT_SUFFIX = '_out.bin'
+    ERROR_POINTS_SUFFIX = '.csv'
+
+    if dtype.lower() == 'float16':
+        data_type = np.float16
+        DATA_TYPE = '_fp16_'
+    elif dtype.lower() == 'float32':
+        data_type = np.float32
+        DATA_TYPE = '_fp32_'
+    else:
+        print('error!')
+    for idx in range(begin-1, end):
+        order_str = gen_order(idx)
+        ground_truth_path = GROUND_TRUTH_DIR+OP_NAME+DATA_TYPE+order_str+GROUND_TRUTH_SUFFIX
+        ascend_out_path = ASCEND_OUT_DIR+OP_NAME+DATA_TYPE+order_str+ASCEND_OUT_SUFFIX
+        ground_truth_data = np.fromfile(ground_truth_path, data_type)
+        ascend_out_data = np.fromfile(ascend_out_path, data_type)
+        error_points_file_name = OP_NAME+DATA_TYPE+order_str+ERROR_POINTS_SUFFIX
+        # compare
+        compare_tensor(ascend_out_data, ground_truth_data, dtype, error_points_file_name)
+        # my.compare_tensor_bak(ascend_out_data, ground_truth_data, dtype)
 
 def gen_order(idx):
     """

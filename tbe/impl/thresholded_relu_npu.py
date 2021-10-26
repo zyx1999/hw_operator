@@ -9,6 +9,7 @@ from te.platform.fusion_manager import fusion_manager
 from topi import generic
 from te.utils import para_check
 
+EPSINON = 1e-6
 
 # pylint: disable=invalid-name,unused-argument
 @fusion_manager.register("thresholded_relu_npu")
@@ -35,13 +36,13 @@ def thresholded_relu_npu_compute(x, y, alpha=1.0, kernel_name="thresholded_relu_
         the result of compute
     """
     input_data_type = x.dtype.lower()
-    if alpha == 0.0:
+    if alpha - 0.0 < EPSINON:
         data_res = te.lang.cce.vrelu(x)
         res = te.lang.cce.cast_to(data_res, input_data_type)
     else:
         scalar_zero = tvm.const(0, dtype=input_data_type)
         scalar_alpha = tvm.const(alpha, dtype=input_data_type)
-        res = te.lang.cce.vcmpsel(x, scalar_alpha, 'ge', x, scalar_zero)
+        res = te.lang.cce.vcmpsel(x, scalar_alpha, 'gt', x, scalar_zero)
     return res
 
 

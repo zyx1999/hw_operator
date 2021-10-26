@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/abs_npu_plugin.cpp" "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.o"
-  "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/leaky_relu_npu_plugin.cpp" "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.o"
-  "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/thresholded_relu_npu_plugin.cpp" "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.o"
+  "/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/abs_npu_plugin.cpp" "/home/zhaoyuxuan/AscendProjects/hw_operator/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.o"
+  "/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/leaky_relu_npu_plugin.cpp" "/home/zhaoyuxuan/AscendProjects/hw_operator/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.o"
+  "/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/thresholded_relu_npu_plugin.cpp" "/home/zhaoyuxuan/AscendProjects/hw_operator/build/framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

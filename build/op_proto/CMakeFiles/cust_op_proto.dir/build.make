@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx
+CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build
+CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator/build
 
 # Include any dependencies generated for this target.
 include op_proto/CMakeFiles/cust_op_proto.dir/depend.make
@@ -59,16 +59,16 @@ include op_proto/CMakeFiles/cust_op_proto.dir/flags.make
 
 op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o: op_proto/CMakeFiles/cust_op_proto.dir/flags.make
 op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o: ../op_proto/abs_npu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o -c /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o"
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o -c /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.cpp
 
 op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cust_op_proto.dir/abs_npu.cpp.i"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.cpp > CMakeFiles/cust_op_proto.dir/abs_npu.cpp.i
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.cpp > CMakeFiles/cust_op_proto.dir/abs_npu.cpp.i
 
 op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cust_op_proto.dir/abs_npu.cpp.s"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.cpp -o CMakeFiles/cust_op_proto.dir/abs_npu.cpp.s
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.cpp -o CMakeFiles/cust_op_proto.dir/abs_npu.cpp.s
 
 op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o.requires:
 
@@ -83,16 +83,16 @@ op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o.provides.build: op_proto/CMa
 
 op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o: op_proto/CMakeFiles/cust_op_proto.dir/flags.make
 op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o: ../op_proto/leaky_relu_npu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o -c /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/leaky_relu_npu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o"
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o -c /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/leaky_relu_npu.cpp
 
 op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.i"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/leaky_relu_npu.cpp > CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.i
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/leaky_relu_npu.cpp > CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.i
 
 op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.s"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/leaky_relu_npu.cpp -o CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.s
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/leaky_relu_npu.cpp -o CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.s
 
 op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o.requires:
 
@@ -107,16 +107,16 @@ op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o.provides.build: op_pr
 
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: op_proto/CMakeFiles/cust_op_proto.dir/flags.make
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o: ../op_proto/thresholded_relu_npu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o -c /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o"
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o -c /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.cpp
 
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.i"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.cpp > CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.i
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.cpp > CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.i
 
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.s"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.cpp -o CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.s
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.cpp -o CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.s
 
 op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o.requires:
 
@@ -143,8 +143,8 @@ makepkg/packages/op_proto/custom/libcust_op_proto.so: op_proto/CMakeFiles/cust_o
 makepkg/packages/op_proto/custom/libcust_op_proto.so: op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o
 makepkg/packages/op_proto/custom/libcust_op_proto.so: op_proto/CMakeFiles/cust_op_proto.dir/build.make
 makepkg/packages/op_proto/custom/libcust_op_proto.so: op_proto/CMakeFiles/cust_op_proto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cust_op_proto.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../makepkg/packages/op_proto/custom/libcust_op_proto.so"
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cust_op_proto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 op_proto/CMakeFiles/cust_op_proto.dir/build: makepkg/packages/op_proto/custom/libcust_op_proto.so
@@ -158,10 +158,10 @@ op_proto/CMakeFiles/cust_op_proto.dir/requires: op_proto/CMakeFiles/cust_op_prot
 .PHONY : op_proto/CMakeFiles/cust_op_proto.dir/requires
 
 op_proto/CMakeFiles/cust_op_proto.dir/clean:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto && $(CMAKE_COMMAND) -P CMakeFiles/cust_op_proto.dir/cmake_clean.cmake
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto && $(CMAKE_COMMAND) -P CMakeFiles/cust_op_proto.dir/cmake_clean.cmake
 .PHONY : op_proto/CMakeFiles/cust_op_proto.dir/clean
 
 op_proto/CMakeFiles/cust_op_proto.dir/depend:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto/CMakeFiles/cust_op_proto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaoyuxuan/AscendProjects/hw_operator /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto /home/zhaoyuxuan/AscendProjects/hw_operator/build /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto /home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto/CMakeFiles/cust_op_proto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : op_proto/CMakeFiles/cust_op_proto.dir/depend
 

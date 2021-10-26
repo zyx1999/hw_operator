@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx
+CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build
+CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/framework/onnx_plugin/CMakeFiles/progress.marks
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles 0
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles /home/zhaoyuxuan/AscendProjects/hw_operator/build/framework/onnx_plugin/CMakeFiles/progress.marks
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/clean
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/preinstall
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/preinstall
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/rule:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/rule
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f CMakeFiles/Makefile2 framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/rule
 .PHONY : framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ cust_onnx_parsers: framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/rule
 
 # fast build rule for target.
 cust_onnx_parsers/fast:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build
 .PHONY : cust_onnx_parsers/fast
 
 abs_npu_plugin.o: abs_npu_plugin.cpp.o
@@ -131,7 +131,7 @@ abs_npu_plugin.o: abs_npu_plugin.cpp.o
 
 # target to build an object file
 abs_npu_plugin.cpp.o:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.o
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.o
 .PHONY : abs_npu_plugin.cpp.o
 
 abs_npu_plugin.i: abs_npu_plugin.cpp.i
@@ -140,7 +140,7 @@ abs_npu_plugin.i: abs_npu_plugin.cpp.i
 
 # target to preprocess a source file
 abs_npu_plugin.cpp.i:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.i
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.i
 .PHONY : abs_npu_plugin.cpp.i
 
 abs_npu_plugin.s: abs_npu_plugin.cpp.s
@@ -149,7 +149,7 @@ abs_npu_plugin.s: abs_npu_plugin.cpp.s
 
 # target to generate assembly for a file
 abs_npu_plugin.cpp.s:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.s
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/abs_npu_plugin.cpp.s
 .PHONY : abs_npu_plugin.cpp.s
 
 leaky_relu_npu_plugin.o: leaky_relu_npu_plugin.cpp.o
@@ -158,7 +158,7 @@ leaky_relu_npu_plugin.o: leaky_relu_npu_plugin.cpp.o
 
 # target to build an object file
 leaky_relu_npu_plugin.cpp.o:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.o
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.o
 .PHONY : leaky_relu_npu_plugin.cpp.o
 
 leaky_relu_npu_plugin.i: leaky_relu_npu_plugin.cpp.i
@@ -167,7 +167,7 @@ leaky_relu_npu_plugin.i: leaky_relu_npu_plugin.cpp.i
 
 # target to preprocess a source file
 leaky_relu_npu_plugin.cpp.i:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.i
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.i
 .PHONY : leaky_relu_npu_plugin.cpp.i
 
 leaky_relu_npu_plugin.s: leaky_relu_npu_plugin.cpp.s
@@ -176,7 +176,7 @@ leaky_relu_npu_plugin.s: leaky_relu_npu_plugin.cpp.s
 
 # target to generate assembly for a file
 leaky_relu_npu_plugin.cpp.s:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.s
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/leaky_relu_npu_plugin.cpp.s
 .PHONY : leaky_relu_npu_plugin.cpp.s
 
 thresholded_relu_npu_plugin.o: thresholded_relu_npu_plugin.cpp.o
@@ -185,7 +185,7 @@ thresholded_relu_npu_plugin.o: thresholded_relu_npu_plugin.cpp.o
 
 # target to build an object file
 thresholded_relu_npu_plugin.cpp.o:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.o
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.o
 .PHONY : thresholded_relu_npu_plugin.cpp.o
 
 thresholded_relu_npu_plugin.i: thresholded_relu_npu_plugin.cpp.i
@@ -194,7 +194,7 @@ thresholded_relu_npu_plugin.i: thresholded_relu_npu_plugin.cpp.i
 
 # target to preprocess a source file
 thresholded_relu_npu_plugin.cpp.i:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.i
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.i
 .PHONY : thresholded_relu_npu_plugin.cpp.i
 
 thresholded_relu_npu_plugin.s: thresholded_relu_npu_plugin.cpp.s
@@ -203,7 +203,7 @@ thresholded_relu_npu_plugin.s: thresholded_relu_npu_plugin.cpp.s
 
 # target to generate assembly for a file
 thresholded_relu_npu_plugin.cpp.s:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.s
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(MAKE) -f framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/build.make framework/onnx_plugin/CMakeFiles/cust_onnx_parsers.dir/thresholded_relu_npu_plugin.cpp.s
 .PHONY : thresholded_relu_npu_plugin.cpp.s
 
 # Help Target
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto
+# Install script for directory: /home/zhaoyuxuan/AscendProjects/hw_operator/op_proto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

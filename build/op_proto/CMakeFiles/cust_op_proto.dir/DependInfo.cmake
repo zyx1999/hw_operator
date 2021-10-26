@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/abs_npu.cpp" "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o"
-  "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/leaky_relu_npu.cpp" "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o"
-  "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/op_proto/thresholded_relu_npu.cpp" "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o"
+  "/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/abs_npu.cpp" "/home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto/CMakeFiles/cust_op_proto.dir/abs_npu.cpp.o"
+  "/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/leaky_relu_npu.cpp" "/home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto/CMakeFiles/cust_op_proto.dir/leaky_relu_npu.cpp.o"
+  "/home/zhaoyuxuan/AscendProjects/hw_operator/op_proto/thresholded_relu_npu.cpp" "/home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto/CMakeFiles/cust_op_proto.dir/thresholded_relu_npu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

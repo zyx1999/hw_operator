@@ -23,26 +23,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CPP" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/trelu_fp16_1_18" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
-      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
-      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/csv_files" />
-      <recent name="$PROJECT_DIR$/op_proto" />
-      <recent name="$PROJECT_DIR$/framework/onnx_plugin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
       <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
       <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/csv_files" />
       <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend610" />
       <recent name="$PROJECT_DIR$/tbe/op_info_cfg/ai_core/ascend310" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/scripts" />
+      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu/csv_files" />
+      <recent name="$PROJECT_DIR$/testcases/bbit/thresholdedrelu_npu" />
+      <recent name="$PROJECT_DIR$/op_proto" />
+      <recent name="$PROJECT_DIR$/framework/onnx_plugin" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test_thresholded_relu_npu">
@@ -56,6 +56,27 @@
       <method v="2" />
     </configuration>
     <configuration name="ut_proto_thresholded_relu_npu" type="AscendOperatorConfigurationType" factoryName="Ascend Operator" testingType="ut_proto" hostip="" operatorName="" testcaseId="" testcaseClassName="" testcaseName="" executorFileName="" netCommandArgument="" SOC_VERSION_KEY="Ascend310" CORE_TYPE_KEY="" AI_CORE_NUM_KEY="" MAX_AI_CORE_NUM_KEY="" L1_FUSION_KEY="" runTarget="" ustTestcasePath="" stTestKeyId="thresholded_relu_npu" stGenerateData="true" compileOperator="true" stRunST="true" runCoverageReport="true" utRunCaseNames="ThresholdedReluNpuTest.thresholded_relu_npu_test_case_1:ThresholdedReluNpuTest.thresholded_relu_npu_test_case_2">
+      <method v="2" />
+    </configuration>
+    <configuration name="aaaa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ONNX_Sample" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tbe/impl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tbe/impl/aaaa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="test_thresholded_relu_npu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -84,10 +105,12 @@
       <item itemvalue="Ascend Operator.ut_impl_thresholded_relu_npu" />
       <item itemvalue="Ascend Operator.ut_proto_thresholded_relu_npu" />
       <item itemvalue="Python.test_thresholded_relu_npu" />
+      <item itemvalue="Python.aaaa" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_thresholded_relu_npu" />
+        <item itemvalue="Python.aaaa" />
       </list>
     </recent_temporary>
   </component>
@@ -106,11 +129,11 @@
     </state>
     <state x="435" y="263" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1630580626531" />
     <state x="580" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1632114500345" />
-    <state x="611" y="248" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632812968998">
+    <state x="611" y="248" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1635227847427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="458" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1631634812192" />
-    <state x="611" y="248" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1632812968998" />
+    <state x="611" y="248" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635227847427" />
     <state x="350" y="118" key="#ut_impl_leaky_relu_npu" timestamp="1630490283983">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -123,31 +146,31 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="350" y="189" key="#ut_proto_thresholded_relu_npu/0.0.1440.900@0.0.1440.900" timestamp="1630513258982" />
-    <state x="687" y="266" key="FileChooserDialogImpl" timestamp="1632821038901">
+    <state x="687" y="266" key="FileChooserDialogImpl" timestamp="1635253832887">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="515" y="222" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1631636686588" />
-    <state x="687" y="266" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1632821038901" />
-    <state width="1899" height="343" key="GridCell.Tab.0.bottom" timestamp="1632821218557">
+    <state x="687" y="266" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1635253832887" />
+    <state width="1899" height="339" key="GridCell.Tab.0.bottom" timestamp="1635251379392">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631634910309" />
-    <state width="1899" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1632821218557" />
-    <state width="1899" height="343" key="GridCell.Tab.0.center" timestamp="1632821218555">
+    <state width="1899" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1635251379392" />
+    <state width="1899" height="339" key="GridCell.Tab.0.center" timestamp="1635251379387">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631634910308" />
-    <state width="1899" height="343" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1632821218555" />
-    <state width="1899" height="343" key="GridCell.Tab.0.left" timestamp="1632821218553">
+    <state width="1899" height="339" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1635251379387" />
+    <state width="1899" height="339" key="GridCell.Tab.0.left" timestamp="1635251379287">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631634910307" />
-    <state width="1899" height="343" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1632821218553" />
-    <state width="1899" height="343" key="GridCell.Tab.0.right" timestamp="1632821218556">
+    <state width="1899" height="339" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1635251379287" />
+    <state width="1899" height="339" key="GridCell.Tab.0.right" timestamp="1635251379389">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="297" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631634910309" />
-    <state width="1899" height="343" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1632821218556" />
+    <state width="1899" height="339" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1635251379389" />
     <state width="1419" height="261" key="GridCell.Tab.1.bottom" timestamp="1630581493540">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -164,15 +187,23 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="261" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1630581493539" />
-    <state x="287" y="50" key="SettingsEditor" timestamp="1632801115433">
+    <state x="287" y="50" key="SettingsEditor" timestamp="1635248138793">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="215" y="42" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1631120367970" />
-    <state x="287" y="50" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1632801115433" />
-    <state x="521" y="251" width="896" height="814" key="search.everywhere.popup" timestamp="1632793414682">
+    <state x="287" y="50" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1635248138793" />
+    <state x="624" y="248" key="run.anything.popup" timestamp="1635253179857">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="624" y="248" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1635253179857" />
+    <state x="521" y="251" width="896" height="814" key="search.everywhere.popup" timestamp="1635232151748">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="391" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1631549918079" />
-    <state x="521" y="251" width="896" height="814" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1632793414682" />
+    <state x="521" y="251" width="896" height="814" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1635232151748" />
+    <state x="690" y="447" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1635232172050">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="447" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635232172050" />
   </component>
 </project>

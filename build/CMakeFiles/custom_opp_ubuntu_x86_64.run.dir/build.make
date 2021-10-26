@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx
+CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build
+CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator/build
 
 # Utility rule file for custom_opp_ubuntu_x86_64.run.
 
@@ -61,11 +61,11 @@ custom_opp_ubuntu_x86_64.run: CMakeFiles/custom_opp_ubuntu_x86_64.run
 custom_opp_ubuntu_x86_64.run: CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/build.make
 	mkdir -p ./makepkg/packages/fusion_rules/custom/
 	mkdir -p ./makepkg/packages/op_impl/custom/ai_core/tbe/custom_impl
-	cp -r /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/impl/*.py ./makepkg/packages/op_impl/custom/ai_core/tbe/custom_impl
-	cp /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/scripts/install.sh ./makepkg/
-	cp /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/scripts/upgrade.sh ./makepkg/
-	cp /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/scripts/uninstall.sh ./makepkg/
-	cp /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/scripts/help.sh ./makepkg/
+	cp -r /home/zhaoyuxuan/AscendProjects/hw_operator/tbe/impl/*.py ./makepkg/packages/op_impl/custom/ai_core/tbe/custom_impl
+	cp /home/zhaoyuxuan/AscendProjects/hw_operator/scripts/install.sh ./makepkg/
+	cp /home/zhaoyuxuan/AscendProjects/hw_operator/scripts/upgrade.sh ./makepkg/
+	cp /home/zhaoyuxuan/AscendProjects/hw_operator/scripts/uninstall.sh ./makepkg/
+	cp /home/zhaoyuxuan/AscendProjects/hw_operator/scripts/help.sh ./makepkg/
 	../cmake/util/makeself/makeself.sh --gzip --complevel 4 --nomd5 --sha256 ./makepkg custom_opp_ubuntu_x86_64.run version:1.0 ./install.sh
 .PHONY : custom_opp_ubuntu_x86_64.run
 
@@ -79,6 +79,6 @@ CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/clean:
 .PHONY : CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/clean
 
 CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/depend:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaoyuxuan/AscendProjects/hw_operator /home/zhaoyuxuan/AscendProjects/hw_operator /home/zhaoyuxuan/AscendProjects/hw_operator/build /home/zhaoyuxuan/AscendProjects/hw_operator/build /home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_opp_ubuntu_x86_64.run.dir/depend
 

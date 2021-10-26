@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe
+# Install script for directory: /home/zhaoyuxuan/AscendProjects/hw_operator/tbe
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -98,17 +98,17 @@ string
 
 /home/zhaoyuxuan/.mindstudio/huawei/adk/3.10.T0.0.B260/atc/include/register/register_types.h
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/abs_npu_plugin.cpp
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/abs_npu_plugin.cpp
 ge_onnx.pb.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/ge_onnx.pb.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/ge_onnx.pb.h
 register/register.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/register/register.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/register/register.h
 string
 -
 vector
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/ge_onnx.pb.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/ge_onnx.pb.h
 limits
 -
 string
@@ -148,19 +148,19 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/leaky_relu_npu_plugin.cpp
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/leaky_relu_npu_plugin.cpp
 ge_onnx.pb.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/ge_onnx.pb.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/ge_onnx.pb.h
 register/register.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/register/register.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/register/register.h
 string
 -
 
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/thresholded_relu_npu_plugin.cpp
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/thresholded_relu_npu_plugin.cpp
 ge_onnx.pb.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/ge_onnx.pb.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/ge_onnx.pb.h
 register/register.h
-/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/framework/onnx_plugin/register/register.h
+/home/zhaoyuxuan/AscendProjects/hw_operator/framework/onnx_plugin/register/register.h
 string
 -
 

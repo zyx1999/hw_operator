@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx
+# Install script for directory: /home/zhaoyuxuan/AscendProjects/hw_operator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/framework/cmake_install.cmake")
-  include("/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/op_proto/cmake_install.cmake")
-  include("/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe/cmake_install.cmake")
+  include("/home/zhaoyuxuan/AscendProjects/hw_operator/build/framework/cmake_install.cmake")
+  include("/home/zhaoyuxuan/AscendProjects/hw_operator/build/op_proto/cmake_install.cmake")
+  include("/home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhaoyuxuan/AscendProjects/hw_operator/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

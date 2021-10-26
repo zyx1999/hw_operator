@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx
+CMAKE_SOURCE_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build
+CMAKE_BINARY_DIR = /home/zhaoyuxuan/AscendProjects/hw_operator/build
 
 # Utility rule file for config_json.
 
@@ -55,20 +55,20 @@ include tbe/CMakeFiles/config_json.dir/progress.make
 
 tbe/CMakeFiles/config_json: tbe/aic-ascend310-ops-info.json
 tbe/CMakeFiles/config_json: tbe/aic-ascend610-ops-info.json
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && mkdir -p /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/framework/custom/onnx/
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && bash /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/cmake/util/gen_ops_filter.sh /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/framework/custom/onnx/
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && mkdir -p /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/framework/custom/onnx/
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && bash /home/zhaoyuxuan/AscendProjects/hw_operator/cmake/util/gen_ops_filter.sh /home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/framework/custom/onnx/
 
 tbe/aic-ascend310-ops-info.json:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "generate configure json file"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && echo python3.7.5\ /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/cmake/util/parse_ini_to_json.py\ /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend310/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend310/leaky_relu_npu.ini	\ /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//aic-ascend310-ops-info.json
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && mkdir -p /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend310
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && python3.7.5 /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/cmake/util/parse_ini_to_json.py /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend310/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend310/leaky_relu_npu.ini	 /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend310/aic-ascend310-ops-info.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "generate configure json file"
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && echo python3.7.5\ /home/zhaoyuxuan/AscendProjects/hw_operator/cmake/util/parse_ini_to_json.py\ /home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend310/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend310/leaky_relu_npu.ini	\ /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//aic-ascend310-ops-info.json
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && mkdir -p /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend310
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && python3.7.5 /home/zhaoyuxuan/AscendProjects/hw_operator/cmake/util/parse_ini_to_json.py /home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend310/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend310/leaky_relu_npu.ini	 /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend310/aic-ascend310-ops-info.json
 
 tbe/aic-ascend610-ops-info.json:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "generate configure json file"
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && echo python3.7.5\ /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/cmake/util/parse_ini_to_json.py\ /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend610/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend610/leaky_relu_npu.ini	/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend610/thresholded_relu_npu.ini	\ /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//aic-ascend610-ops-info.json
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && mkdir -p /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend610
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && python3.7.5 /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/cmake/util/parse_ini_to_json.py /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend610/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend610/leaky_relu_npu.ini	/home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe/op_info_cfg/ai_core/ascend610/thresholded_relu_npu.ini	 /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend610/aic-ascend610-ops-info.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhaoyuxuan/AscendProjects/hw_operator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "generate configure json file"
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && echo python3.7.5\ /home/zhaoyuxuan/AscendProjects/hw_operator/cmake/util/parse_ini_to_json.py\ /home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend610/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend610/leaky_relu_npu.ini	/home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend610/thresholded_relu_npu.ini	\ /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//aic-ascend610-ops-info.json
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && mkdir -p /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend610
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && python3.7.5 /home/zhaoyuxuan/AscendProjects/hw_operator/cmake/util/parse_ini_to_json.py /home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend610/abs_npu.ini	/home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend610/leaky_relu_npu.ini	/home/zhaoyuxuan/AscendProjects/hw_operator/tbe/op_info_cfg/ai_core/ascend610/thresholded_relu_npu.ini	 /home/zhaoyuxuan/AscendProjects/hw_operator/build/makepkg/packages/op_impl/custom/ai_core/tbe/config//ascend610/aic-ascend610-ops-info.json
 
 config_json: tbe/CMakeFiles/config_json
 config_json: tbe/aic-ascend310-ops-info.json
@@ -83,10 +83,10 @@ tbe/CMakeFiles/config_json.dir/build: config_json
 .PHONY : tbe/CMakeFiles/config_json.dir/build
 
 tbe/CMakeFiles/config_json.dir/clean:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe && $(CMAKE_COMMAND) -P CMakeFiles/config_json.dir/cmake_clean.cmake
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe && $(CMAKE_COMMAND) -P CMakeFiles/config_json.dir/cmake_clean.cmake
 .PHONY : tbe/CMakeFiles/config_json.dir/clean
 
 tbe/CMakeFiles/config_json.dir/depend:
-	cd /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/tbe /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe /home/zhaoyuxuan/AscendProjects/thresholdedrelu_zyx/build/tbe/CMakeFiles/config_json.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhaoyuxuan/AscendProjects/hw_operator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhaoyuxuan/AscendProjects/hw_operator /home/zhaoyuxuan/AscendProjects/hw_operator/tbe /home/zhaoyuxuan/AscendProjects/hw_operator/build /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe /home/zhaoyuxuan/AscendProjects/hw_operator/build/tbe/CMakeFiles/config_json.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tbe/CMakeFiles/config_json.dir/depend
 
