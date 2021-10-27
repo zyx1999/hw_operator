@@ -4,10 +4,11 @@
 thresholded_relu_npu
 """
 import te.lang.cce
+
 from te import tvm
-from te.platform.fusion_manager import fusion_manager
 from topi import generic
 from te.utils import para_check
+from te.platform.fusion_manager import fusion_manager
 
 EPSINON = 1e-6
 
@@ -95,7 +96,7 @@ def thresholded_relu_npu(x, y, alpha=1.0, kernel_name="thresholded_relu_npu"):
     # build
     te.lang.cce.cce_build_code(schedule, config)
 
-
+# pylint: disable=consider-using-f-string
 def _check_param_alpha(alpha, op_name):
     if alpha < 0:
         error_info = {
@@ -105,6 +106,6 @@ def _check_param_alpha(alpha, op_name):
         }
         raise RuntimeError(
             "In op[%s], the threshold location of activation [%s] should greater than or equal 0, "
-            "but actually is [%s]." % (error_info['op_name'],
-                                       error_info['attr_name'],
-                                       error_info['attr_actual_value']))
+            "but actually is [%s]."
+            % (error_info['op_name'], error_info['attr_name'],
+               error_info['attr_actual_value']))
